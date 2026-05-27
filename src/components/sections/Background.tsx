@@ -14,13 +14,31 @@ function Lightbox({ src, onClose }: { src: string; onClose: () => void }) {
   return (
     <div
       className="fixed inset-0 z-50 flex items-center justify-center"
-      style={{ background: "rgba(0,0,0,0.8)" }}
+      style={{ background: "rgba(0,0,0,0.85)", animation: "lightbox-in 0.2s ease" }}
       onClick={onClose}
     >
+      {/* Close button */}
+      <button
+        onClick={onClose}
+        className="absolute top-4 right-4 w-10 h-10 flex items-center justify-center text-[#aaaaaa] hover:text-white transition-colors bg-[#1a1a1a] hover:bg-[#2a2a2a] border border-[#2a2a2a]"
+        aria-label="Close"
+      >
+        <svg width="16" height="16" viewBox="0 0 16 16" fill="none">
+          <line x1="1" y1="1" x2="15" y2="15" stroke="currentColor" strokeWidth="2" strokeLinecap="round"/>
+          <line x1="15" y1="1" x2="1" y2="15" stroke="currentColor" strokeWidth="2" strokeLinecap="round"/>
+        </svg>
+      </button>
+
+      {/* Hint */}
+      <span className="absolute bottom-4 left-1/2 -translate-x-1/2 text-xs text-[#555555] tracking-widest uppercase select-none">
+        Click anywhere or press Esc to close
+      </span>
+
       <img
         src={src}
         alt=""
-        className="max-w-[90vw] max-h-[90vh] object-contain"
+        className="max-w-[90vw] max-h-[85vh] object-contain"
+        style={{ animation: "lightbox-img-in 0.25s ease" }}
         onClick={(e) => e.stopPropagation()}
       />
     </div>

@@ -64,8 +64,9 @@ export const timeline: TimelineEntry[] = [
     role: "RUN-EU: Future Explorations",
     org: "FHV, Vorarlberg, Austria",
     link: "https://run.eu/products/bip-futexplo-01",
+    image: "/images/run-eu-future-explorations.jpeg",
     description:
-      "Smart textile design challenge. Multicultural international team project.",
+      "Designed a smart curtain prototype for Getzner Textil AG — integrating intelligence into textile to regulate indoor temperature, lighting, and wellbeing in a single product. Multicultural international team project.",
   },
   {
     period: "Feb – May 2026",
@@ -86,33 +87,36 @@ export const timeline: TimelineEntry[] = [
     role: "Project Intern",
     org: "HAMK Häme University of Applied Sciences, Hämeenlinna, Finland",
     description:
-      "Conducted user research with 30+ student interviews to identify retention challenges. Designed an app prototype (Figma, 8 screens) and presented technical architecture and business case to stakeholders.",
+      "Part of the HAMK Home Design Factory project. Conducted user research with 30+ student interviews to identify retention challenges. Designed an app prototype (Figma, 8 screens) and presented technical architecture and business case to stakeholders at Hämeenlinna City Hall.",
   },
   {
     period: "Apr – May 2025",
     role: "RUN-EU: BIP Smart Everything",
     org: "Universidad de Burgos, Burgos, Spain",
     link: "https://run-eu.eu/2025/03/01/bip-smart-everything-connecting-artificial-intelligence-tools-with-business-ideas/",
+    image: "/images/run-eu-smart-everything.jpeg",
     description:
-      "Built an AI tool to process paper and digital invoices — automatic data extraction, calculations, and summaries. Coded front-end and integrated AI models using Python and Hugging Face.",
+      "Built an AI tool to process paper and digital invoices — automatic data extraction, calculations, and summaries. Coded front-end and integrated AI models using Python and Hugging Face. Recognised as one of the best presenters at the final showcase.",
   },
   {
     period: "Oct – Dec 2024",
     role: "Demola Global Innovator",
     org: "Tampere, Finland",
     link: "https://portal.demola.net/projects/1017",
-    certificate: "/images/certificate-demola.jpg",
+    certificate: "/images/certificate-demola.jpeg",
+    image: "/images/demola.jpeg",
     description:
-      "Collaborated on the \"AI where you need it?\" innovation project. Conducted user research, iterated on product design, visited M-Files office, and presented at Demola National Finals supported by Business Finland.",
+      "Collaborated on the 'AI where you need it?' innovation project. Built Content Pilot — an AI tool for content creators. Conducted user research, iterated on product design, visited M-Files office, and presented at Demola National Finals supported by Business Finland.",
   },
   {
     period: "Oct – Nov 2024",
     role: "RUN-EU: Game Changing Games",
     org: "IPCA, Barcelos, Portugal",
     link: "https://run-eu.eu/2024/08/01/sap-game-changing-games-4th-edition/",
-    certificate: "/images/certificate-run-eu-game.jpg",
+    certificate: "/images/certificate-run-eu-game.jpeg",
+    image: "/images/run-eu-game-changing.jpeg",
     description:
-      "Designed game environments in Unity (modern and ancient eras). Coded game menu and NPC panel in C#.",
+      "Designed 3D game environments in Unity (modern and ancient eras). Coded game menu and NPC panel in C#.",
   },
   {
     period: "May – Aug 2024",
@@ -139,7 +143,7 @@ export const timeline: TimelineEntry[] = [
     period: "Dec 2018 – Apr 2020",
     role: "Progress Advisor & MC",
     org: "EF English First, Chengdu, Sichuan, China",
-    image: "/images/ef-mc.JPG",
+    image: "/images/ef-mc.jpeg",
     description:
       "Worked with students aged 3–8. Led initiative to improve campus NPS across 10 Chengdu campuses — from bottom-ranked nationally to top 10. Hosted EF Chengdu annual gala events as MC.",
   },
