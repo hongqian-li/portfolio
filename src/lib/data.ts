@@ -55,20 +55,20 @@ export type TimelineEntry = {
   description: string;
 };
 
-export const timelineTech: TimelineEntry[] = [
-  {
-    period: "Feb – May 2026",
-    role: "Thesis – Security by Design for Enterprise AI Chatbots",
-    org: "HAMK Häme University of Applied Sciences",
-    description:
-      "Designed and built a GDPR-compliant AI chatbot on Azure with Terraform. Researched Security by Design for enterprise AI. Developed agentic AI application with custom MCP servers and RAG pipelines.",
-  },
+export const timeline: TimelineEntry[] = [
   {
     period: "Apr – May 2026",
     role: "RUN-EU: Future Explorations",
     org: "FHV, Vorarlberg, Austria",
     description:
-      "Smart textile design challenge. Multicultural team project.",
+      "Smart textile design challenge. Multicultural international team project.",
+  },
+  {
+    period: "Feb – May 2026",
+    role: "Thesis – Security by Design for Enterprise AI Chatbots",
+    org: "HAMK Häme University of Applied Sciences, Hämeenlinna, Finland",
+    description:
+      "Designed and built a GDPR-compliant AI chatbot on Azure with Terraform. Researched Security by Design for enterprise AI. Developed agentic AI application with custom MCP servers and RAG pipelines.",
   },
   {
     period: "Sep 2025 – Jan 2026",
@@ -78,18 +78,25 @@ export const timelineTech: TimelineEntry[] = [
       "Focused on cloud computing and IT infrastructure. Part of an international student cohort in Vienna.",
   },
   {
+    period: "Jun – Aug 2025",
+    role: "Project Intern",
+    org: "HAMK Häme University of Applied Sciences, Hämeenlinna, Finland",
+    description:
+      "Conducted user research with 30+ student interviews to identify retention challenges. Designed an app prototype (Figma, 8 screens) and presented technical architecture and business case to stakeholders.",
+  },
+  {
     period: "Apr – May 2025",
     role: "RUN-EU: BIP Smart Everything",
-    org: "Universidad de Burgos, Spain",
+    org: "Universidad de Burgos, Burgos, Spain",
     description:
-      "Built an AI tool to process paper and digital invoices — automatic data extraction, calculations, and summaries. Coded front-end and integrated AI models using Python and Hugging Face. Multicultural team of business and tech students.",
+      "Built an AI tool to process paper and digital invoices — automatic data extraction, calculations, and summaries. Coded front-end and integrated AI models using Python and Hugging Face.",
   },
   {
     period: "Oct – Dec 2024",
     role: "Demola Global Innovator",
     org: "Tampere, Finland",
     description:
-      "Collaborated on the “AI where you need it?” innovation project. Conducted user research, iterated on product design, visited M-Files office, and presented at Demola National Finals supported by Business Finland.",
+      "Collaborated on the \"AI where you need it?\" innovation project. Conducted user research, iterated on product design, visited M-Files office, and presented at Demola National Finals supported by Business Finland.",
   },
   {
     period: "Oct – Nov 2024",
@@ -101,55 +108,35 @@ export const timelineTech: TimelineEntry[] = [
   {
     period: "May – Aug 2024",
     role: "Customer Service Specialist",
-    org: "HAMK Häme University of Applied Sciences",
+    org: "HAMK Häme University of Applied Sciences, Hämeenlinna, Finland",
     description:
       "Handled 30+ daily student inquiries about housing, arrival, and orientation. Tracked 900+ requests in Excel. Coordinated arrival logistics for 100+ international students.",
   },
   {
     period: "Aug 2023",
-    role: "Started BBA – Degree Programme in Computer Applications",
-    org: "HAMK Häme University of Applied Sciences, Finland",
+    role: "Started BBA – Degree Programme in Computer Applications (DevOps / Delivering Software Products)",
+    org: "HAMK Häme University of Applied Sciences, Hämeenlinna, Finland",
     description:
       "Career pivot: moved from China to Finland to retrain in software and cloud engineering.",
   },
-];
-
-export const timelineBridge: TimelineEntry[] = [
-  {
-    period: "Jun – Aug 2025",
-    role: "Project Intern",
-    org: "HAMK Häme University of Applied Sciences",
-    description:
-      "Conducted user research with 30+ student interviews to identify retention challenges. Designed an app prototype (Figma, 8 screens) and presented technical architecture and business case to stakeholders.",
-  },
-  {
-    period: "May – Aug 2024",
-    role: "Customer Service Specialist",
-    org: "HAMK Häme University of Applied Sciences",
-    description:
-      "Handled 30+ daily student inquiries. Tracked 900+ requests. Coordinated 100+ international students' arrival logistics.",
-  },
-];
-
-export const timelinePrevious: TimelineEntry[] = [
   {
     period: "Oct 2020 – Aug 2023",
     role: "Student Development Coach",
-    org: "Easyke (易课教育), Sichuan, China",
+    org: "Easyke (易课教育), Chengdu, Sichuan, China",
     description:
-      "Guided 100+ international students (Australia, Canada, UK) with study plans and course selection. Weekly check-ins with students and parents. Managed renewals and satisfaction. Used DingTalk and Excel for student tracking.",
+      "Guided 100+ international students (Australia, Canada, UK) with study plans and course selection. Weekly check-ins with students and parents. Managed renewals and satisfaction.",
   },
   {
     period: "Dec 2018 – Apr 2020",
     role: "Progress Advisor & MC",
-    org: "EF English First, Chengdu, China",
+    org: "EF English First, Chengdu, Sichuan, China",
     description:
-      "Worked with students aged 3–8. Led initiative to improve campus NPS across 10 Chengdu campuses — from bottom-ranked nationally to top 10. Hosted EF Chengdu annual gala events as MC. Coordinated course renewals and seasonal sales.",
+      "Worked with students aged 3–8. Led initiative to improve campus NPS across 10 Chengdu campuses — from bottom-ranked nationally to top 10. Hosted EF Chengdu annual gala events as MC.",
   },
   {
     period: "2014 – 2018",
     role: "Bachelor of Fine Arts – Broadcasters and Hosts",
-    org: "Sichuan University of Media and Communications (SUMC), China",
+    org: "Sichuan University of Media and Communications (SUMC), Chengdu, China",
     description:
       "Trained in broadcast journalism, on-camera presentation, and deadline-driven production.",
   },

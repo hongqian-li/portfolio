@@ -18,7 +18,7 @@ export default function Skills() {
             >
               What I Build
               <br />
-              <span className="text-[#333333]">With</span>
+              <span className="text-[#C8C8C8]">With</span>
             </h2>
           </div>
           <p className="text-[#C8C8C8] text-sm max-w-xs leading-relaxed lg:pb-2">
