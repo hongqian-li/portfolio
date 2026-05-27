@@ -48,54 +48,110 @@ export const projects = [
   },
 ];
 
-export const timeline = [
+export type TimelineEntry = {
+  period: string;
+  role: string;
+  org: string;
+  description: string;
+};
+
+export const timelineTech: TimelineEntry[] = [
   {
-    period: "2024 – 2026",
-    track: "tech",
-    role: "Thesis & Capstone Projects",
-    org: "HAMK University",
+    period: "Feb – May 2026",
+    role: "Thesis – Security by Design for Enterprise AI Chatbots",
+    org: "HAMK Häme University of Applied Sciences",
     description:
-      "Designed and built a GDPR-compliant AI chatbot on Azure. Researched Security by Design for enterprise AI. Developed agentic AI with MCP servers and RAG pipelines.",
+      "Designed and built a GDPR-compliant AI chatbot on Azure with Terraform. Researched Security by Design for enterprise AI. Developed agentic AI application with custom MCP servers and RAG pipelines.",
   },
   {
-    period: "2023 – 2024",
-    track: "tech",
-    role: "Cloud & DevOps Studies",
-    org: "HAMK + Exchange at UAS Technikum Wien",
+    period: "Apr – May 2026",
+    role: "RUN-EU: Future Explorations",
+    org: "FHV, Vorarlberg, Austria",
     description:
-      "Deep focus on Azure, Terraform, Docker, Kubernetes, and CI/CD. Exchange semester in Vienna. Participated in RUN-EU program visiting Portugal, Spain, and Austria.",
+      "Smart textile design challenge. Multicultural team project.",
   },
   {
-    period: "2022 – 2023",
-    track: "bridge",
-    role: "Arrival Specialist",
-    org: "HAMK University",
+    period: "Sep 2025 – Jan 2026",
+    role: "Exchange Semester – IT Infrastructure & Cloud Computing",
+    org: "UAS Technikum Wien, Vienna, Austria",
     description:
-      "Managed accommodation, logistics, and orientation for 100+ international students. First operational role in Finland — built practical understanding of cross-cultural communication at scale.",
+      "Focused on cloud computing and IT infrastructure. Part of an international student cohort in Vienna.",
   },
   {
-    period: "2021 – 2022",
-    track: "bridge",
-    role: "Started BBA in Computer Applications",
-    org: "HAMK University, Finland",
+    period: "Apr – May 2025",
+    role: "RUN-EU: BIP Smart Everything",
+    org: "Universidad de Burgos, Spain",
     description:
-      "Career pivot: moved from China to Finland to retrain in software and cloud. Brought communication skills and audience awareness into a technical domain.",
+      "Built an AI tool to process paper and digital invoices — automatic data extraction, calculations, and summaries. Coded front-end and integrated AI models using Python and Hugging Face. Multicultural team of business and tech students.",
   },
   {
-    period: "2018 – 2021",
-    track: "previous",
-    role: "Presenter, MC & VIP Student Coordinator",
-    org: "EF English First, China",
+    period: "Oct – Dec 2024",
+    role: "Demola Global Innovator",
+    org: "Tampere, Finland",
     description:
-      "Led annual gala events for hundreds of guests as MC. Managed VIP student services. Developed the ability to read a room, simplify complex ideas, and keep any audience engaged — now applied to AI demos and technical presentations.",
+      "Collaborated on the “AI where you need it?” innovation project. Conducted user research, iterated on product design, visited M-Files office, and presented at Demola National Finals supported by Business Finland.",
+  },
+  {
+    period: "Oct – Nov 2024",
+    role: "RUN-EU: Game Changing Games",
+    org: "IPCA, Barcelos, Portugal",
+    description:
+      "Designed game environments in Unity (modern and ancient eras). Coded game menu and NPC panel in C#.",
+  },
+  {
+    period: "May – Aug 2024",
+    role: "Customer Service Specialist",
+    org: "HAMK Häme University of Applied Sciences",
+    description:
+      "Handled 30+ daily student inquiries about housing, arrival, and orientation. Tracked 900+ requests in Excel. Coordinated arrival logistics for 100+ international students.",
+  },
+  {
+    period: "Aug 2023",
+    role: "Started BBA – Degree Programme in Computer Applications",
+    org: "HAMK Häme University of Applied Sciences, Finland",
+    description:
+      "Career pivot: moved from China to Finland to retrain in software and cloud engineering.",
+  },
+];
+
+export const timelineBridge: TimelineEntry[] = [
+  {
+    period: "Jun – Aug 2025",
+    role: "Project Intern",
+    org: "HAMK Häme University of Applied Sciences",
+    description:
+      "Conducted user research with 30+ student interviews to identify retention challenges. Designed an app prototype (Figma, 8 screens) and presented technical architecture and business case to stakeholders.",
+  },
+  {
+    period: "May – Aug 2024",
+    role: "Customer Service Specialist",
+    org: "HAMK Häme University of Applied Sciences",
+    description:
+      "Handled 30+ daily student inquiries. Tracked 900+ requests. Coordinated 100+ international students' arrival logistics.",
+  },
+];
+
+export const timelinePrevious: TimelineEntry[] = [
+  {
+    period: "Oct 2020 – Aug 2023",
+    role: "Student Development Coach",
+    org: "Easyke (易课教育), Sichuan, China",
+    description:
+      "Guided 100+ international students (Australia, Canada, UK) with study plans and course selection. Weekly check-ins with students and parents. Managed renewals and satisfaction. Used DingTalk and Excel for student tracking.",
+  },
+  {
+    period: "Dec 2018 – Apr 2020",
+    role: "Progress Advisor & MC",
+    org: "EF English First, Chengdu, China",
+    description:
+      "Worked with students aged 3–8. Led initiative to improve campus NPS across 10 Chengdu campuses — from bottom-ranked nationally to top 10. Hosted EF Chengdu annual gala events as MC. Coordinated course renewals and seasonal sales.",
   },
   {
     period: "2014 – 2018",
-    track: "previous",
-    role: "Television News Broadcasting",
-    org: "Sichuan Media University, China",
+    role: "Bachelor of Fine Arts – Broadcasters and Hosts",
+    org: "Sichuan University of Media and Communications (SUMC), China",
     description:
-      "Trained in broadcast journalism, on-camera presentation, and deadline-driven production. Foundation for clear, confident communication under pressure.",
+      "Trained in broadcast journalism, on-camera presentation, and deadline-driven production.",
   },
 ];
 
