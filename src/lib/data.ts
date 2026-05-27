@@ -53,6 +53,9 @@ export type TimelineEntry = {
   role: string;
   org: string;
   description: string;
+  link?: string;
+  certificate?: string;
+  image?: string;
 };
 
 export const timeline: TimelineEntry[] = [
@@ -60,6 +63,7 @@ export const timeline: TimelineEntry[] = [
     period: "Apr – May 2026",
     role: "RUN-EU: Future Explorations",
     org: "FHV, Vorarlberg, Austria",
+    link: "https://run.eu/products/bip-futexplo-01",
     description:
       "Smart textile design challenge. Multicultural international team project.",
   },
@@ -88,6 +92,7 @@ export const timeline: TimelineEntry[] = [
     period: "Apr – May 2025",
     role: "RUN-EU: BIP Smart Everything",
     org: "Universidad de Burgos, Burgos, Spain",
+    link: "https://run-eu.eu/2025/03/01/bip-smart-everything-connecting-artificial-intelligence-tools-with-business-ideas/",
     description:
       "Built an AI tool to process paper and digital invoices — automatic data extraction, calculations, and summaries. Coded front-end and integrated AI models using Python and Hugging Face.",
   },
@@ -95,6 +100,8 @@ export const timeline: TimelineEntry[] = [
     period: "Oct – Dec 2024",
     role: "Demola Global Innovator",
     org: "Tampere, Finland",
+    link: "https://portal.demola.net/projects/1017",
+    certificate: "/images/certificate-demola.jpg",
     description:
       "Collaborated on the \"AI where you need it?\" innovation project. Conducted user research, iterated on product design, visited M-Files office, and presented at Demola National Finals supported by Business Finland.",
   },
@@ -102,6 +109,8 @@ export const timeline: TimelineEntry[] = [
     period: "Oct – Nov 2024",
     role: "RUN-EU: Game Changing Games",
     org: "IPCA, Barcelos, Portugal",
+    link: "https://run-eu.eu/2024/08/01/sap-game-changing-games-4th-edition/",
+    certificate: "/images/certificate-run-eu-game.jpg",
     description:
       "Designed game environments in Unity (modern and ancient eras). Coded game menu and NPC panel in C#.",
   },
@@ -130,6 +139,7 @@ export const timeline: TimelineEntry[] = [
     period: "Dec 2018 – Apr 2020",
     role: "Progress Advisor & MC",
     org: "EF English First, Chengdu, Sichuan, China",
+    image: "/images/ef-mc.JPG",
     description:
       "Worked with students aged 3–8. Led initiative to improve campus NPS across 10 Chengdu campuses — from bottom-ranked nationally to top 10. Hosted EF Chengdu annual gala events as MC.",
   },
@@ -137,6 +147,7 @@ export const timeline: TimelineEntry[] = [
     period: "2014 – 2018",
     role: "Bachelor of Fine Arts – Broadcasters and Hosts",
     org: "Sichuan University of Media and Communications (SUMC), Chengdu, China",
+    image: "/images/news-broadcast.jpeg",
     description:
       "Trained in broadcast journalism, on-camera presentation, and deadline-driven production.",
   },
