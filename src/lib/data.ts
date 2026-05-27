@@ -5,7 +5,7 @@ export const skills = [
   },
   {
     category: "AI & Development",
-    items: ["Python", "RAG Pipelines", "ChromaDB", "MCP Servers", "LLM Integration"],
+    items: ["Python", "RAG Pipelines", "ChromaDB", "MCP Servers", "LLM Integration", "Agentic AI"],
   },
   {
     category: "DevOps & Security",
@@ -145,7 +145,7 @@ export const timeline: TimelineEntry[] = [
   },
   {
     period: "2014 – 2018",
-    role: "Bachelor of Fine Arts – Broadcasters and Hosts",
+    role: "Bachelor of Fine Arts – Broadcasting and Hosting",
     org: "Sichuan University of Media and Communications (SUMC), Chengdu, China",
     image: "/images/news-broadcast.jpeg",
     description:

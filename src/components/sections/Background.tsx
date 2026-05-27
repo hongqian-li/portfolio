@@ -1,9 +1,39 @@
 "use client";
 
+import { useState, useEffect } from "react";
 import SectionLabel from "@/components/ui/SectionLabel";
 import { timeline, type TimelineEntry } from "@/lib/data";
 
-function TimelineList({ entries }: { entries: TimelineEntry[] }) {
+function Lightbox({ src, onClose }: { src: string; onClose: () => void }) {
+  useEffect(() => {
+    const handle = (e: KeyboardEvent) => { if (e.key === "Escape") onClose(); };
+    document.addEventListener("keydown", handle);
+    return () => document.removeEventListener("keydown", handle);
+  }, [onClose]);
+
+  return (
+    <div
+      className="fixed inset-0 z-50 flex items-center justify-center"
+      style={{ background: "rgba(0,0,0,0.8)" }}
+      onClick={onClose}
+    >
+      <img
+        src={src}
+        alt=""
+        className="max-w-[90vw] max-h-[90vh] object-contain"
+        onClick={(e) => e.stopPropagation()}
+      />
+    </div>
+  );
+}
+
+function TimelineList({
+  entries,
+  onLightbox,
+}: {
+  entries: TimelineEntry[];
+  onLightbox: (src: string) => void;
+}) {
   return (
     <div className="relative">
       <div className="absolute left-[7px] top-0 bottom-0 w-px bg-[#1e1e1e] hidden sm:block" />
@@ -39,13 +69,12 @@ function TimelineList({ entries }: { entries: TimelineEntry[] }) {
                 {item.description}
               </p>
 
-              {/* Thumbnail image */}
+              {/* Thumbnail — opens lightbox */}
               {item.image && (
-                <a
-                  href={item.image}
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="mt-4 inline-block"
+                <button
+                  onClick={() => onLightbox(item.image!)}
+                  className="mt-4 block cursor-zoom-in"
+                  aria-label="View full image"
                 >
                   <img
                     src={item.image}
@@ -58,7 +87,7 @@ function TimelineList({ entries }: { entries: TimelineEntry[] }) {
                       display: "block",
                     }}
                   />
-                </a>
+                </button>
               )}
 
               {/* Certificate link */}
@@ -81,6 +110,8 @@ function TimelineList({ entries }: { entries: TimelineEntry[] }) {
 }
 
 export default function Background() {
+  const [lightbox, setLightbox] = useState<string | null>(null);
+
   return (
     <section id="background" className="py-32 px-6 border-t border-[#1e1e1e] bg-[#0a0a0a]">
       <div className="max-w-6xl mx-auto">
@@ -108,25 +139,12 @@ export default function Background() {
         </div>
 
         {/* Single unified timeline */}
-        <TimelineList entries={timeline} />
-
-        {/* Stats callout */}
-        <div className="mt-20 pt-8 border-t border-[#1e1e1e]">
-          <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
-            {[
-              { label: "Presented at", value: "Demola National Finals, Helsinki" },
-              { label: "Coordinated", value: "100+ international students' arrival" },
-              { label: "Lived & studied in", value: "China · Finland · Austria · Portugal · Spain" },
-            ].map(({ label, value }) => (
-              <div key={label} className="border-l border-[#1e1e1e] pl-4">
-                <p className="text-xs text-[#444444] tracking-widest uppercase mb-1">{label}</p>
-                <p className="text-sm text-[#C8C8C8]">{value}</p>
-              </div>
-            ))}
-          </div>
-        </div>
+        <TimelineList entries={timeline} onLightbox={setLightbox} />
 
       </div>
+
+      {/* Lightbox overlay */}
+      {lightbox && <Lightbox src={lightbox} onClose={() => setLightbox(null)} />}
     </section>
   );
 }

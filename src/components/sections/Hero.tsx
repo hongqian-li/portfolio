@@ -43,9 +43,9 @@ export default function Hero() {
             AI &amp; Cloud Engineer — Tampere, Finland
           </p>
 
-          <p className="text-[#C8C8C8] text-xl lg:text-2xl font-light leading-relaxed mb-12">
-            I build and deploy AI systems to the cloud —{" "}
-            <span className="text-[#fafafa] font-normal italic">
+          <p className="text-[#E8E8E8] text-xl lg:text-2xl font-light leading-relaxed mb-12">
+            I build AI systems —{" "}
+            <span className="font-normal italic">
               and I can explain them to anyone in the room.
             </span>
           </p>

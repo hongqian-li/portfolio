@@ -52,7 +52,7 @@ export default function Thesis() {
           </div>
           <div className="flex flex-col justify-end gap-4">
             <p className="text-[#C8C8C8] text-sm leading-relaxed">
-              Graduating June 2026 · HAMK University of Applied Sciences
+              Graduating June 2026 · HAMK Häme University of Applied Sciences
             </p>
             <div className="flex flex-wrap gap-2">
               {["Azure", "Terraform", "Norway East", "GDPR", "EU AI Act", "Zero Trust"].map((tag) => (

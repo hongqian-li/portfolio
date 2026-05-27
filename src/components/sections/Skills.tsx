@@ -22,8 +22,7 @@ export default function Skills() {
             </h2>
           </div>
           <p className="text-[#C8C8C8] text-sm max-w-xs leading-relaxed lg:pb-2">
-            Cloud-native infrastructure, privacy-first AI, and production-grade DevOps —
-            built to last, auditable, and explainable.
+            Azure, Terraform, Python, and privacy-first AI — from local prototype to cloud deployment.
           </p>
         </div>
 
@@ -61,7 +60,7 @@ export default function Skills() {
           </span>
           <div className="w-8 h-px bg-[#2a2a2a] hidden sm:block" />
           <div className="flex flex-wrap gap-2">
-            {["LangGraph", "Agents SDK", "Azure AI Foundry", "Prompt Caching"].map((item) => (
+            {["N8N", "Microsoft Power Platform", "Prompt Engineering"].map((item) => (
               <span key={item} className="text-xs text-[#555555] px-2 py-1 border border-dashed border-[#2a2a2a]">
                 {item}
               </span>
