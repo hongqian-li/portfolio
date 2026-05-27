@@ -108,10 +108,6 @@ export default function Hero() {
             background: "linear-gradient(to right, #0a0a0a 0%, rgba(10,10,10,0.6) 50%, transparent 100%)",
           }}
         />
-        {/* Location tag */}
-        <div className="absolute bottom-8 left-10 inline-flex items-center gap-1.5 bg-[#0a0a0a]/70 backdrop-blur-sm border border-[#1e1e1e] px-3 py-1.5 text-xs text-[#C8C8C8] tracking-widest uppercase">
-          📍 Tampere, FI
-        </div>
       </div>
     </section>
   );
