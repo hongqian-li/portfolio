@@ -73,7 +73,7 @@ export const timeline: TimelineEntry[] = [
     role: "Thesis – Security by Design for Enterprise AI Chatbots",
     org: "HAMK Häme University of Applied Sciences, Hämeenlinna, Finland",
     description:
-      "Designed and built a GDPR-compliant AI chatbot on Azure with Terraform. Researched Security by Design for enterprise AI. Developed agentic AI application with custom MCP servers and RAG pipelines.",
+      "Designed and built a GDPR-compliant AI chatbot on Azure with Terraform. Researched Security by Design for enterprise AI.",
   },
   {
     period: "Sep 2025 – Jan 2026",

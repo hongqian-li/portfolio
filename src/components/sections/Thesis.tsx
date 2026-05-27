@@ -43,11 +43,11 @@ export default function Thesis() {
             <SectionLabel text="Bachelor's Thesis" className="mb-4 block" />
             <h2
               className="font-heading font-extrabold text-[#fafafa] leading-tight"
-              style={{ fontSize: "clamp(2rem, 5vw, 4rem)" }}
+              style={{ fontSize: "clamp(1.75rem, 3.2vw, 3rem)" }}
             >
               Security by Design
               <br />
-              for Enterprise AI
+              for Enterprise AI Chatbots
             </h2>
           </div>
           <div className="flex flex-col justify-end gap-4">
