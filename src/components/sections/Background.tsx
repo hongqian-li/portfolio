@@ -35,7 +35,7 @@ function TimelineList({ entries, color }: { entries: TimelineEntry[]; color: str
                   {item.period}
                 </span>
               </div>
-              <p className="text-[#666666] text-sm leading-relaxed mt-3">
+              <p className="text-[#C8C8C8] text-sm leading-relaxed mt-3">
                 {item.description}
               </p>
             </div>
@@ -68,7 +68,7 @@ export default function Background() {
             </h2>
           </div>
           <div className="flex flex-col justify-end">
-            <p className="text-[#666666] text-sm leading-relaxed max-w-sm">
+            <p className="text-[#C8C8C8] text-sm leading-relaxed max-w-sm">
               My path from broadcast journalism to AI engineering is not career confusion —
               it's a genuine differentiator. I understand both sides of the room:
               the technical architecture, and the people who need to trust it.
@@ -114,7 +114,7 @@ export default function Background() {
             ].map(({ label, value }) => (
               <div key={label} className="border-l border-[#1e1e1e] pl-4">
                 <p className="text-xs text-[#444444] tracking-widest uppercase mb-1">{label}</p>
-                <p className="text-sm text-[#888888]">{value}</p>
+                <p className="text-sm text-[#C8C8C8]">{value}</p>
               </div>
             ))}
           </div>

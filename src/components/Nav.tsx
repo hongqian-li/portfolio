@@ -21,10 +21,8 @@ export default function Nav() {
 
   return (
     <header
-      className={`fixed top-0 left-0 right-0 z-50 transition-all duration-300 ${
-        scrolled
-          ? "bg-[#0a0a0a]/90 backdrop-blur-md border-b border-[#1e1e1e]"
-          : "bg-transparent"
+      className={`fixed top-0 left-0 right-0 z-50 transition-all duration-300 bg-[#0a0a0a]/95 backdrop-blur-md ${
+        scrolled ? "border-b border-[#1e1e1e]" : "border-b border-transparent"
       }`}
     >
       <nav className="max-w-6xl mx-auto px-6 h-16 flex items-center justify-between">
@@ -42,7 +40,7 @@ export default function Nav() {
             <li key={href}>
               <button
                 onClick={() => handleNavClick(href)}
-                className="text-sm text-[#999999] hover:text-[#fafafa] transition-colors tracking-wide cursor-pointer"
+                className="text-sm text-[#C8C8C8] hover:text-[#fafafa] transition-colors tracking-wide cursor-pointer"
               >
                 {label}
               </button>
@@ -70,7 +68,7 @@ export default function Nav() {
               <li key={href}>
                 <button
                   onClick={() => handleNavClick(href)}
-                  className="text-base text-[#999999] hover:text-[#fafafa] transition-colors w-full text-left"
+                  className="text-base text-[#C8C8C8] hover:text-[#fafafa] transition-colors w-full text-left"
                 >
                   {label}
                 </button>

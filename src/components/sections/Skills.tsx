@@ -21,7 +21,7 @@ export default function Skills() {
               <span className="text-[#333333]">With</span>
             </h2>
           </div>
-          <p className="text-[#666666] text-sm max-w-xs leading-relaxed lg:pb-2">
+          <p className="text-[#C8C8C8] text-sm max-w-xs leading-relaxed lg:pb-2">
             Cloud-native infrastructure, privacy-first AI, and production-grade DevOps —
             built to last, auditable, and explainable.
           </p>
@@ -44,7 +44,7 @@ export default function Skills() {
                 {group.items.map((item) => (
                   <span
                     key={item}
-                    className="px-3 py-1.5 text-xs text-[#999999] border border-[#1e1e1e] hover:border-[#00C896]/50 hover:text-[#fafafa] transition-all duration-200 cursor-default"
+                    className="px-3 py-1.5 text-xs text-[#C8C8C8] border border-[#1e1e1e] hover:border-[#00C896]/50 hover:text-[#fafafa] transition-all duration-200 cursor-default"
                   >
                     {item}
                   </span>

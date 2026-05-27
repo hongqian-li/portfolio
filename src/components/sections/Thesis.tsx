@@ -51,7 +51,7 @@ export default function Thesis() {
             </h2>
           </div>
           <div className="flex flex-col justify-end gap-4">
-            <p className="text-[#666666] text-sm leading-relaxed">
+            <p className="text-[#C8C8C8] text-sm leading-relaxed">
               Graduating June 2026 · HAMK University of Applied Sciences
             </p>
             <div className="flex flex-wrap gap-2">
@@ -110,7 +110,7 @@ export default function Thesis() {
                   <p className="text-[#00C896] text-xs tracking-widest uppercase mb-4">
                     {layer.subtitle}
                   </p>
-                  <p className="text-[#666666] text-sm leading-relaxed">
+                  <p className="text-[#C8C8C8] text-sm leading-relaxed">
                     {layer.description}
                   </p>
                 </div>
@@ -128,7 +128,7 @@ export default function Thesis() {
           ].map(({ label, value }) => (
             <div key={label}>
               <p className="text-xs text-[#444444] tracking-widest uppercase mb-1">{label}</p>
-              <p className="text-sm text-[#888888]">{value}</p>
+              <p className="text-sm text-[#C8C8C8]">{value}</p>
             </div>
           ))}
         </div>
