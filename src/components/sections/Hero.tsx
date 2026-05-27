@@ -76,15 +76,15 @@ export default function Hero() {
 
           {/* Right: Photo */}
           <div className="order-1 lg:order-2 flex justify-center lg:justify-end">
-            <div className="relative">
+            <div className="relative pb-6 pr-0">
               {/* Accent border offset */}
-              <div className="absolute -top-3 -right-3 w-full h-full border border-[#00C896]/30" />
+              <div className="absolute -top-3 -right-3 w-[calc(100%-1.5rem)] h-[calc(100%-1.5rem)] border border-[#00C896]/30 pointer-events-none" />
               <div className="relative w-64 h-80 lg:w-80 lg:h-96 bg-[#111111] overflow-hidden">
                 <Image
                   src="/images/photo-placeholder.jpg"
                   alt="Hongqian Li"
                   fill
-                  className="object-cover grayscale hover:grayscale-0 transition-all duration-500 z-10 relative"
+                  className="object-cover z-10 relative"
                   priority
                 />
                 {/* Placeholder overlay shown when image missing */}
@@ -96,8 +96,8 @@ export default function Hero() {
                   <span className="mt-3 text-xs tracking-widest uppercase">Photo</span>
                 </div>
               </div>
-              {/* Location tag */}
-              <div className="absolute -bottom-4 -left-4 bg-[#0a0a0a] border border-[#1e1e1e] px-3 py-1.5 text-xs text-[#666666] tracking-widest uppercase">
+              {/* Location tag — outside overflow-hidden so it's always visible */}
+              <div className="mt-3 inline-flex items-center gap-1.5 bg-[#0a0a0a] border border-[#1e1e1e] px-3 py-1.5 text-xs text-[#666666] tracking-widest uppercase">
                 📍 Tampere, FI
               </div>
             </div>
