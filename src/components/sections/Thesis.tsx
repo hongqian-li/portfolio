@@ -34,7 +34,7 @@ const layers = [
 
 export default function Thesis() {
   return (
-    <section id="thesis" className="py-32 px-6 border-t border-[#1e1e1e] bg-[#070707]">
+    <section id="thesis" className="py-32 px-6 border-t border-[#1e1e1e] bg-[#111111]">
       <div className="max-w-6xl mx-auto">
 
         {/* Header */}
@@ -87,7 +87,7 @@ export default function Thesis() {
               <div
                 key={layer.number}
                 className={`p-8 flex flex-col gap-4 ${
-                  layer.accent ? "bg-[#0f0f0f]" : "bg-[#0a0a0a]"
+                  layer.accent ? "bg-[#191919]" : "bg-[#111111]"
                 }`}
               >
                 <div className="flex items-center justify-between">

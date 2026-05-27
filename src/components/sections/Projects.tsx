@@ -5,7 +5,7 @@ import { projects } from "@/lib/data";
 
 export default function Projects() {
   return (
-    <section id="projects" className="py-32 px-6 border-t border-[#1e1e1e]">
+    <section id="projects" className="py-32 px-6 border-t border-[#1e1e1e] bg-[#0a0a0a]">
       <div className="max-w-6xl mx-auto">
 
         <div className="mb-20">

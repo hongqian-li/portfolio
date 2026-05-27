@@ -4,7 +4,7 @@ import SectionLabel from "@/components/ui/SectionLabel";
 
 export default function Contact() {
   return (
-    <section id="contact" className="py-32 px-6 border-t border-[#1e1e1e]">
+    <section id="contact" className="py-32 px-6 border-t border-[#1e1e1e] bg-[#0a0a0a]">
       <div className="max-w-6xl mx-auto">
 
         {/* Big CTA text */}
@@ -28,7 +28,7 @@ export default function Contact() {
         <div className="grid grid-cols-1 sm:grid-cols-3 gap-px bg-[#1e1e1e] mb-20">
           <a
             href="mailto:hongqi4nli@gmail.com"
-            className="group bg-[#0a0a0a] p-8 hover:bg-[#0f0f0f] transition-colors flex flex-col gap-3"
+            className="group bg-[#0a0a0a] p-8 hover:bg-[#0d0d0d] transition-colors flex flex-col gap-3"
           >
             <span className="text-xs text-[#444444] tracking-widest uppercase">Email</span>
             <span className="text-[#888888] group-hover:text-[#00C896] transition-colors text-sm break-all">
@@ -43,7 +43,7 @@ export default function Contact() {
             href="https://github.com/hongqian-li"
             target="_blank"
             rel="noopener noreferrer"
-            className="group bg-[#0a0a0a] p-8 hover:bg-[#0f0f0f] transition-colors flex flex-col gap-3"
+            className="group bg-[#0a0a0a] p-8 hover:bg-[#0d0d0d] transition-colors flex flex-col gap-3"
           >
             <span className="text-xs text-[#444444] tracking-widest uppercase">GitHub</span>
             <span className="text-[#888888] group-hover:text-[#00C896] transition-colors text-sm">
@@ -58,7 +58,7 @@ export default function Contact() {
             href="https://linkedin.com/in/hongqian-li-9508671a6"
             target="_blank"
             rel="noopener noreferrer"
-            className="group bg-[#0a0a0a] p-8 hover:bg-[#0f0f0f] transition-colors flex flex-col gap-3"
+            className="group bg-[#0a0a0a] p-8 hover:bg-[#0d0d0d] transition-colors flex flex-col gap-3"
           >
             <span className="text-xs text-[#444444] tracking-widest uppercase">LinkedIn</span>
             <span className="text-[#888888] group-hover:text-[#00C896] transition-colors text-sm">

@@ -7,9 +7,22 @@ export default function Hero() {
   return (
     <section
       id="hero"
-      className="min-h-screen flex items-center pt-16 px-6"
+      className="relative min-h-screen flex items-center pt-16 px-6 bg-[#0a0a0a] overflow-hidden"
     >
-      <div className="max-w-6xl mx-auto w-full">
+      {/* Teal radial glow behind the name */}
+      <div
+        className="absolute pointer-events-none"
+        style={{
+          top: "15%",
+          left: "-5%",
+          width: "70%",
+          height: "60%",
+          background: "radial-gradient(ellipse at 30% 50%, rgba(0,200,150,0.06) 0%, transparent 65%)",
+          filter: "blur(40px)",
+        }}
+        aria-hidden="true"
+      />
+      <div className="max-w-6xl mx-auto w-full relative z-10">
         <div className="grid grid-cols-1 lg:grid-cols-[1fr_auto] gap-16 lg:gap-24 items-center">
 
           {/* Left: Text */}

@@ -12,7 +12,7 @@ const photos = [
 
 export default function Photography() {
   return (
-    <section id="photography" className="py-32 px-6 border-t border-[#1e1e1e] bg-[#070707]">
+    <section id="photography" className="py-32 px-6 border-t border-[#1e1e1e] bg-[#111111]">
       <div className="max-w-6xl mx-auto">
 
         {/* Header */}

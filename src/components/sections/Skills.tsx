@@ -5,7 +5,7 @@ import { skills } from "@/lib/data";
 
 export default function Skills() {
   return (
-    <section id="skills" className="py-32 px-6 border-t border-[#1e1e1e]">
+    <section id="skills" className="py-32 px-6 border-t border-[#1e1e1e] bg-[#111111]">
       <div className="max-w-6xl mx-auto">
 
         {/* Header */}
@@ -30,7 +30,7 @@ export default function Skills() {
         {/* Skill groups */}
         <div className="grid grid-cols-1 md:grid-cols-2 gap-px bg-[#1e1e1e]">
           {skills.map((group, i) => (
-            <div key={i} className="bg-[#0a0a0a] p-8 hover:bg-[#0f0f0f] transition-colors group">
+            <div key={i} className="bg-[#111111] p-8 hover:bg-[#161616] transition-colors group">
               <div className="flex items-start justify-between mb-6">
                 <span className="text-xs text-[#444444] font-mono">
                   0{i + 1}

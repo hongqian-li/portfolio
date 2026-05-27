@@ -17,7 +17,7 @@ const trackLabels: Record<string, string> = {
 
 export default function Background() {
   return (
-    <section id="background" className="py-32 px-6 border-t border-[#1e1e1e]">
+    <section id="background" className="py-32 px-6 border-t border-[#1e1e1e] bg-[#0a0a0a]">
       <div className="max-w-6xl mx-auto">
 
         {/* Header */}
