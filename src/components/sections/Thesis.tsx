@@ -77,7 +77,7 @@ export default function Thesis() {
             <p className="text-xs text-[#686868] tracking-widest uppercase mb-3">System Context</p>
             <p className="text-[#D0D0D0] text-sm leading-relaxed">
               A GDPR Article 9 sensitive query was processed directly by an LLM in HAMK's public chatbot without prior detection or routing controls.
-              There was no mechanism to handle it differently from other requests.
+              It was treated like any other request.
               This thesis designed a privacy-first RAG architecture combining a verified knowledge base (ChromaDB),
               deterministic classification layers, and selective LLM inference:
               safe queries answered from the knowledge base; sensitive ones routed to human support.

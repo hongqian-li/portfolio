@@ -161,7 +161,7 @@ export default function Background() {
           </div>
           <div className="flex flex-col justify-end">
             <p className="text-[#D0D0D0] text-sm leading-relaxed max-w-sm">
-              My route from broadcast hosting and client-facing work to software engineering looks unconventional. It isn't. Every step sharpened a skill the next one needed: how to communicate, how to earn trust, and now the technical depth to back it up.
+              My path from broadcast hosting and client-facing roles to software engineering is non-linear. Every step sharpened a skill the next one needed: how to communicate, how to earn trust, and now the technical depth to back it up.
             </p>
           </div>
         </div>

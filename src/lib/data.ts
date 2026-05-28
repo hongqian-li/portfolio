@@ -53,7 +53,7 @@ export const timeline: TimelineEntry[] = [
     link: "https://run.eu/products/bip-futexplo-01",
     image: "/images/run-eu-future-explorations.jpeg",
     description:
-      "Designed a smart curtain prototype for Getzner Textil AG, integrating intelligence into textile to regulate indoor temperature, lighting, and wellbeing in a single product. Multicultural international team project.",
+      "Designed a smart curtain prototype for Getzner Textil AG that regulates indoor temperature, lighting, and wellbeing (simulated daylight for vitamin D) using embedded intelligence. Multicultural international team project.",
   },
   {
     period: "Feb – May 2026",
