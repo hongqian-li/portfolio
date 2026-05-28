@@ -32,6 +32,12 @@ const layers = [
   },
 ];
 
+const insights = [
+  "LLM behaviour on sensitive inputs is model-dependent and cannot be consistently audited across deployments.",
+  "Deterministic preprocessing is required for GDPR-compliant AI systems in production environments.",
+  "False positives in rule-based classification are acceptable under GDPR: avoiding missed sensitive data takes priority over routing efficiency.",
+];
+
 export default function Thesis() {
   return (
     <section id="thesis" className="py-32 px-6 border-t border-[#1e1e1e] bg-[#111111]">
@@ -64,29 +70,36 @@ export default function Thesis() {
           </div>
         </div>
 
-        {/* Context */}
+        {/* System Context + Decision Point */}
         <div className="mb-14 p-8 border border-[#1e1e1e] bg-[#0d0d0d] relative overflow-hidden">
           <div className="absolute top-0 left-0 w-1 h-full bg-[#2a2a2a]" />
-          <p className="text-[#D0D0D0] text-sm leading-relaxed mb-4">
-            While testing HAMK's official website chatbot, I found that a pregnancy-related question
-            (GDPR Article 9 sensitive data) was passed directly to the LLM with no detection in place,
-            and no mechanism to handle it differently from any other query.
-            This thesis built a 3-layer privacy system around a RAG pipeline
-            (ChromaDB + llama3.2 locally, Azure OpenAI in cloud):
-            safe queries are answered from a verified knowledge base;
-            sensitive ones are routed to a human agent.
-          </p>
-          <p className="text-[#D0D0D0] text-sm leading-relaxed">
-            An earlier prototype relied on the LLM classifier as the primary routing layer.
-            Inconsistent behaviour across gpt-4o-mini and llama3.2 made the approach difficult to audit reliably,
-            leading to the deterministic-first architecture.
-          </p>
+          <div className="mb-6">
+            <p className="text-xs text-[#686868] tracking-widest uppercase mb-3">System Context</p>
+            <p className="text-[#D0D0D0] text-sm leading-relaxed">
+              During evaluation of HAMK's public website chatbot, a GDPR Article 9 sensitive query
+              was processed directly by an LLM with no prior detection or routing controls —
+              no mechanism to handle it differently from any other request.
+              This thesis designed a privacy-first RAG architecture combining a verified knowledge base (ChromaDB),
+              deterministic classification layers, and selective LLM inference:
+              safe queries answered from the knowledge base; sensitive ones routed to human support.
+            </p>
+          </div>
+          <div>
+            <p className="text-xs text-[#686868] tracking-widest uppercase mb-3">Decision Point</p>
+            <p className="text-[#D0D0D0] text-sm leading-relaxed">
+              An initial prototype used an LLM-based classifier as the primary routing mechanism.
+              Behaviour was inconsistent across models (gpt-4o-mini vs llama3.2),
+              producing classification outcomes that could not be reliably audited.
+              This led to a redesign: deterministic rules became the primary control layer,
+              with LLMs downgraded to a fallback role.
+            </p>
+          </div>
         </div>
 
-        {/* 3-layer system */}
+        {/* Defense-in-depth architecture */}
         <div className="mb-6">
           <p className="text-xs text-[#686868] tracking-widest uppercase mb-6">
-            3-Layer Privacy Classification System
+            Defense-in-Depth Architecture
           </p>
           <div className="grid grid-cols-1 md:grid-cols-3 gap-px bg-[#1e1e1e]">
             {layers.map((layer) => (
@@ -124,20 +137,25 @@ export default function Thesis() {
           </div>
         </div>
 
-        {/* Key finding */}
-        <div className="mb-14 px-8 py-6 border-l-2 border-[#00C896]/50 bg-[#0d0d0d]">
-          <p className="text-xs text-[#00C896] tracking-widest uppercase mb-3">Key Findings</p>
-          <p className="text-[#D0D0D0] text-sm leading-relaxed mb-4">
-            LLM behaviour on sensitive data is model-dependent and cannot be independently audited.
-            gpt-4o-mini passed a pregnancy-related query without flagging it;
-            llama3.2 correctly escalated the same query after the keyword list was refined.
-            For EU deployments under GDPR, this is a production risk:
-            the only part of the system a compliance audit can verify is what the deterministic layer documents.
-          </p>
+        {/* Engineering Insights */}
+        <div className="mb-8 px-8 py-6 border-l-2 border-[#00C896]/50 bg-[#0d0d0d]">
+          <p className="text-xs text-[#00C896] tracking-widest uppercase mb-4">Engineering Insights</p>
+          <ul className="flex flex-col gap-3">
+            {insights.map((insight, i) => (
+              <li key={i} className="flex items-start gap-3 text-sm text-[#D0D0D0]">
+                <span className="text-[#00C896]/60 mt-0.5 shrink-0">→</span>
+                {insight}
+              </li>
+            ))}
+          </ul>
+        </div>
+
+        {/* Key Outcome */}
+        <div className="mb-14 px-8 py-5 border border-[#1e1e1e] bg-[#0d0d0d]">
+          <p className="text-xs text-[#686868] tracking-widest uppercase mb-2">Key Outcome</p>
           <p className="text-[#D0D0D0] text-sm leading-relaxed">
-            The keyword layer does produce false positives, occasionally routing normal queries to human support.
-            That is an acceptable outcome under GDPR: missing a sensitive query is a compliance failure;
-            an unnecessary handoff is not.
+            The system prioritises auditability and regulatory compliance over model autonomy,
+            making it suitable for enterprise environments handling sensitive personal data under GDPR.
           </p>
         </div>
 

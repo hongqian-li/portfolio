@@ -1,7 +1,7 @@
 "use client";
 
 import SectionLabel from "@/components/ui/SectionLabel";
-import { skills } from "@/lib/data";
+import { skillTiers } from "@/lib/data";
 
 export default function Skills() {
   return (
@@ -26,24 +26,25 @@ export default function Skills() {
           </p>
         </div>
 
-        {/* Skill groups */}
-        <div className="grid grid-cols-1 md:grid-cols-2 gap-px bg-[#1e1e1e]">
-          {skills.map((group, i) => (
-            <div key={i} className="bg-[#111111] p-8 hover:bg-[#161616] transition-colors group">
-              <div className="flex items-start justify-between mb-6">
-                <span className="text-xs text-[#686868] font-mono">
-                  0{i + 1}
-                </span>
-                <span className="w-6 h-px bg-[#00C896] mt-2 group-hover:w-12 transition-all duration-300" />
-              </div>
-              <h3 className="font-heading font-bold text-[#fafafa] text-base mb-5 tracking-wide">
-                {group.category}
-              </h3>
+        {/* Skill tiers */}
+        <div className="flex flex-col divide-y divide-[#1e1e1e]">
+          {skillTiers.map((tier) => (
+            <div
+              key={tier.tier}
+              className="py-8 grid grid-cols-1 sm:grid-cols-[160px_1fr] gap-4 sm:gap-8 items-start"
+            >
+              <span className="text-xs text-[#686868] font-mono tracking-widest uppercase shrink-0 sm:pt-1">
+                {tier.tier}
+              </span>
               <div className="flex flex-wrap gap-2">
-                {group.items.map((item) => (
+                {tier.items.map((item) => (
                   <span
                     key={item}
-                    className="px-3 py-1.5 text-xs text-[#D0D0D0] border border-[#1e1e1e] hover:border-[#00C896]/50 hover:text-[#fafafa] transition-all duration-200 cursor-default"
+                    className={`px-3 py-1.5 text-xs border transition-all duration-200 cursor-default ${
+                      tier.tier === "Focus"
+                        ? "text-[#00C896]/70 border-[#00C896]/20 hover:border-[#00C896]/40 hover:text-[#00C896]"
+                        : "text-[#D0D0D0] border-[#1e1e1e] hover:border-[#00C896]/50 hover:text-[#fafafa]"
+                    }`}
                   >
                     {item}
                   </span>
@@ -54,7 +55,7 @@ export default function Skills() {
         </div>
 
         {/* Also worked with */}
-        <div className="mt-16 pt-8 border-t border-[#1e1e1e] flex flex-col sm:flex-row gap-4 items-start sm:items-center">
+        <div className="mt-12 pt-8 border-t border-[#1e1e1e] flex flex-col sm:flex-row gap-4 items-start sm:items-center">
           <span className="text-xs text-[#686868] tracking-widest uppercase shrink-0">
             Also worked with
           </span>
@@ -68,7 +69,7 @@ export default function Skills() {
           </div>
         </div>
 
-        {/* Currently exploring */}
+        {/* Also exploring */}
         <div className="mt-6 flex flex-col sm:flex-row gap-4 items-start sm:items-center">
           <span className="text-xs text-[#686868] tracking-widest uppercase shrink-0">
             Also exploring

@@ -1,61 +1,36 @@
-export const skills = [
+export const skillTiers = [
   {
-    category: "Cloud & Infrastructure",
-    items: ["Azure", "Terraform", "Docker", "Linux", "Kubernetes"],
+    tier: "Core",
+    items: ["Azure", "Terraform", "Python", "Flask", "Docker", "Linux", "SQL", "Git", "GitHub Actions", "RAG Pipelines", "ChromaDB"],
   },
   {
-    category: "AI & Machine Learning",
-    items: ["RAG Pipelines", "ChromaDB", "MCP Servers", "LLM Integration", "Prompt Engineering", "Hugging Face", "scikit-learn"],
+    tier: "Working knowledge",
+    items: ["Kubernetes", "MCP Servers", "LLM Integration", "Hugging Face", "scikit-learn", "pandas", "Prompt Engineering", "Azure DevOps", "Power BI"],
   },
   {
-    category: "Languages & Frameworks",
-    items: ["Python", "Flask", "SQL", "Bash", "HTML/CSS", "REST APIs", "pandas"],
-  },
-  {
-    category: "DevOps & Tooling",
-    items: ["GitHub Actions", "CI/CD", "Git", "Azure DevOps", "Agile/Scrum", "Jira", "Confluence", "Postman", "Figma"],
-  },
-  {
-    category: "Data & Analytics",
-    items: ["Power BI", "Excel"],
-  },
-  {
-    category: "Compliance & Security",
-    items: ["EU AI Act", "GDPR Article 9", "Privacy by Design", "Security by Design"],
+    tier: "Focus",
+    items: ["Secure AI Systems", "GDPR-compliant Design", "Cloud-native Infrastructure", "Privacy by Design"],
   },
 ];
 
 export const projects = [
   {
     number: "01",
-    title: "accommodation-chatbot",
-    tagline: "Thesis concepts, working tools",
-    description:
-      "My first Finnish summer was spent at HAMK's service desk handling repetitive student arrival emails, exactly the kind of task automation solves better. Built with Claude Code as a hands-on extension of my GDPR-compliant AI chatbot research: RAG on a verified accommodation knowledge base, plus a custom MCP server exposing live tools to the LLM. The thesis privacy classifier runs on every request, routing sensitive queries to human support instead of the LLM.",
+    title: "Privacy-Conscious AI Support System",
     tech: ["Python", "Flask", "ChromaDB", "Ollama", "MCP Server", "RAG"],
     github: "https://github.com/hongqian-li/accommodation-chatbot",
-    highlights: [
-      "4 live MCP tools: VR train schedules, weather, housing listings, web search",
-      "Web search fallback when RAG confidence is low",
-      "Privacy classifier defaults to human routing on uncertain input — fail safe, not fail open",
-      "Built with Claude Code as a practical extension of the thesis privacy architecture",
-    ],
+    context: "Built with Claude Code as a practical extension of thesis research, for the student housing queries I handled at HAMK's service desk.",
+    system: "RAG pipeline over a verified knowledge base with a custom MCP server exposing four live tools (VR train schedules, weather, housing listings, web search). Deterministic classifier routes sensitive queries to human support before any LLM processing — fail safe, not fail open.",
+    engineeringHighlight: "LLM-first routing was abandoned due to inconsistent behaviour across models — deterministic-first classification was chosen for auditability and GDPR compliance.",
   },
   {
     number: "02",
-    title: "Azure Cloud File Sharing App",
-    tagline: "Production-style Azure infrastructure built with Terraform",
-    description:
-      "The capstone for Cloud Computing at UAS Technikum Wien (Erasmus 2025/26), synthesising a semester of hands-on Terraform labs and Azure service work into one fully architected application. A Flask file-sharing app backed by Azure Blob Storage and SQL Database, deployed across a three-tier private network: Application Gateway as the single public entry point, App Service on a delegated subnet, and backend services behind private endpoints with no direct internet access. Every resource is defined via Terraform across five sequential phases, no manual portal configuration.",
+    title: "Azure Private Network File Sharing System",
     tech: ["Azure", "Terraform", "Python", "Flask", "Blob Storage", "Azure SQL"],
     github: "https://github.com/hongqian-li/cloud-computing-technikum-wien/tree/main/azure-cloud-file-sharing-app",
-    highlights: [
-      "Three-tier network: App Gateway / App Service / private endpoints",
-      "Blob Storage and SQL isolated behind private endpoints, no public data access",
-      "Terraform across 5 phases: networking, storage, DB, app, gateway",
-      "Application Insights for monitoring; secrets injected via Terraform environment variables, no hardcoded credentials",
-      "€237/month Azure cost estimate (Norway East, Dec 2024) — App Gateway accounts for 78% of spend, the price of eliminating any direct public endpoint",
-    ],
+    context: "Erasmus cloud computing capstone at UAS Technikum Wien (2025/26): secure file sharing deployed on Azure with no manual portal configuration.",
+    system: "Three-tier private network: Application Gateway as the only public entry point, App Service on a delegated subnet, Blob Storage and SQL behind private endpoints. Application Insights for monitoring; secrets injected via Terraform environment variables, no hardcoded credentials.",
+    engineeringHighlight: "Entire infrastructure across five phases provisioned through Terraform — €237/month cost estimate (Norway East, Dec 2024), App Gateway accounting for 78% of spend.",
   },
 ];
 

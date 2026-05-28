@@ -22,7 +22,7 @@ export default function Projects() {
           {projects.map((project, i) => (
             <div
               key={i}
-              className="group border-t border-[#1e1e1e] py-12 grid grid-cols-1 lg:grid-cols-[120px_1fr_auto] gap-8 hover:bg-[#0d0d0d] -mx-6 px-6 transition-colors"
+              className="group border-t border-[#1e1e1e] py-12 grid grid-cols-1 lg:grid-cols-[80px_1fr_auto] gap-8 hover:bg-[#0d0d0d] -mx-6 px-6 transition-colors"
             >
               {/* Number */}
               <div className="hidden lg:block">
@@ -33,7 +33,7 @@ export default function Projects() {
 
               {/* Content */}
               <div>
-                <div className="flex items-center gap-3 mb-3">
+                <div className="flex items-center gap-3 mb-6">
                   <span className="lg:hidden text-2xl font-heading font-bold text-[#1e1e1e]">
                     {project.number}
                   </span>
@@ -42,34 +42,37 @@ export default function Projects() {
                   </h3>
                 </div>
 
-                <p className="text-[#00C896] text-xs tracking-widest uppercase mb-4">
-                  {project.tagline}
-                </p>
+                {/* Tech Stack */}
+                <div className="mb-6">
+                  <p className="text-xs text-[#686868] tracking-widest uppercase mb-3">Tech Stack</p>
+                  <div className="flex flex-wrap gap-2">
+                    {project.tech.map((t) => (
+                      <span
+                        key={t}
+                        className="text-xs px-2.5 py-1 bg-[#111111] text-[#D0D0D0] border border-[#1e1e1e] group-hover:border-[#2a2a2a] transition-colors"
+                      >
+                        {t}
+                      </span>
+                    ))}
+                  </div>
+                </div>
 
-                <p className="text-[#D0D0D0] text-sm leading-relaxed mb-6 max-w-2xl">
-                  {project.description}
-                </p>
+                {/* Context */}
+                <div className="mb-4">
+                  <p className="text-xs text-[#686868] tracking-widest uppercase mb-2">Context</p>
+                  <p className="text-[#D0D0D0] text-sm">{project.context}</p>
+                </div>
 
-                {/* Highlights */}
-                <ul className="flex flex-col gap-1.5 mb-6">
-                  {project.highlights.map((h, j) => (
-                    <li key={j} className="flex items-start gap-2 text-sm text-[#D0D0D0]">
-                      <span className="text-[#00C896] mt-1 text-xs">→</span>
-                      {h}
-                    </li>
-                  ))}
-                </ul>
+                {/* System */}
+                <div className="mb-6">
+                  <p className="text-xs text-[#686868] tracking-widest uppercase mb-2">System</p>
+                  <p className="text-[#D0D0D0] text-sm leading-relaxed">{project.system}</p>
+                </div>
 
-                {/* Tech pills */}
-                <div className="flex flex-wrap gap-2">
-                  {project.tech.map((t) => (
-                    <span
-                      key={t}
-                      className="text-xs px-2.5 py-1 bg-[#111111] text-[#D0D0D0] border border-[#1e1e1e]"
-                    >
-                      {t}
-                    </span>
-                  ))}
+                {/* Engineering Highlight */}
+                <div className="pl-4 border-l-2 border-[#00C896]/40">
+                  <p className="text-xs text-[#00C896]/60 tracking-widest uppercase mb-2">Engineering Highlight</p>
+                  <p className="text-[#D0D0D0] text-sm">{project.engineeringHighlight}</p>
                 </div>
               </div>
 
@@ -97,7 +100,6 @@ export default function Projects() {
               </div>
             </div>
           ))}
-          {/* Final border */}
           <div className="border-t border-[#1e1e1e]" />
         </div>
 
