@@ -55,7 +55,7 @@ export default function Contact() {
           </a>
 
           <a
-            href="https://linkedin.com/in/hongqian-li-9508671a6"
+            href="https://linkedin.com/in/hongqian-li"
             target="_blank"
             rel="noopener noreferrer"
             className="group bg-[#0a0a0a] p-8 hover:bg-[#0d0d0d] transition-colors flex flex-col gap-3"

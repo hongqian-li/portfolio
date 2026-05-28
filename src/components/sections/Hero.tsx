@@ -83,7 +83,7 @@ export default function Hero() {
               GitHub
             </a>
             <span className="text-[#2a2a2a] text-xs">·</span>
-            <a href="https://linkedin.com/in/hongqian-li-9508671a6" target="_blank" rel="noopener noreferrer" className="text-xs text-[#686868] hover:text-[#00C896] transition-colors tracking-wide">
+            <a href="https://linkedin.com/in/hongqian-li" target="_blank" rel="noopener noreferrer" className="text-xs text-[#686868] hover:text-[#00C896] transition-colors tracking-wide">
               LinkedIn
             </a>
           </div>
