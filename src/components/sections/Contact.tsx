@@ -70,6 +70,23 @@ export default function Contact() {
           </a>
         </div>
 
+        {/* Languages */}
+        <div className="mb-8 flex flex-col sm:flex-row gap-4 items-start sm:items-center">
+          <span className="text-xs text-[#686868] tracking-widest uppercase shrink-0">Languages</span>
+          <div className="w-8 h-px bg-[#2a2a2a] hidden sm:block" />
+          <div className="flex flex-wrap gap-x-6 gap-y-1">
+            {[
+              { lang: "Chinese", level: "Native" },
+              { lang: "English", level: "Professional" },
+              { lang: "Finnish", level: "A2" },
+            ].map(({ lang, level }) => (
+              <span key={lang} className="text-xs text-[#D0D0D0]">
+                {lang} <span className="text-[#686868]">— {level}</span>
+              </span>
+            ))}
+          </div>
+        </div>
+
         {/* Footer */}
         <div className="flex flex-col sm:flex-row items-start sm:items-center justify-between gap-4 pt-8 border-t border-[#1e1e1e]">
           <p className="text-xs text-[#777777] tracking-widest uppercase">
