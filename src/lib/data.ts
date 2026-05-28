@@ -29,15 +29,15 @@ export const projects = [
   {
     number: "01",
     title: "accommodation-chatbot",
-    tagline: "Agentic AI with privacy built in",
+    tagline: "Thesis concepts, working tools",
     description:
-      "An agentic AI application that goes beyond Q&A. A custom MCP server exposes 4 tools, letting the AI take real actions. Grounded in a verified knowledge base via RAG (ChromaDB + Ollama/llama3), with a 3-layer GDPR privacy classifier baked into every request.",
-    tech: ["Python", "MCP Server", "ChromaDB", "Ollama", "Flask", "RAG"],
+      "My first Finnish summer was spent at HAMK's service desk handling repetitive student arrival emails, exactly the kind of task automation solves better. Built with Claude Code as a hands-on extension of my GDPR-compliant AI chatbot research: RAG on a verified accommodation knowledge base, plus a custom MCP server for real agentic tool use. The thesis privacy classifier runs on every request, routing sensitive queries to human support instead of the LLM.",
+    tech: ["Python", "Flask", "ChromaDB", "Ollama", "MCP Server", "RAG"],
     github: "https://github.com/hongqian-li/accommodation-chatbot",
     highlights: [
-      "Custom MCP server with 4 action tools",
-      "RAG pipeline grounded in verified knowledge base",
-      "3-layer GDPR privacy classifier",
+      "4 live MCP tools: VR train schedules, weather, housing listings, web search",
+      "Web search fallback when RAG confidence is low",
+      "Built with Claude Code, turning thesis research into a working agentic app",
     ],
   },
   {
