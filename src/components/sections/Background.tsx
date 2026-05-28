@@ -4,12 +4,30 @@ import { useState, useEffect } from "react";
 import SectionLabel from "@/components/ui/SectionLabel";
 import { timeline, type TimelineEntry } from "@/lib/data";
 
-function Lightbox({ src, onClose }: { src: string; onClose: () => void }) {
+function Lightbox({
+  images,
+  index,
+  onClose,
+  onNavigate,
+}: {
+  images: string[];
+  index: number;
+  onClose: () => void;
+  onNavigate: (i: number) => void;
+}) {
+  const src = images[index];
+  const hasPrev = index > 0;
+  const hasNext = index < images.length - 1;
+
   useEffect(() => {
-    const handle = (e: KeyboardEvent) => { if (e.key === "Escape") onClose(); };
+    const handle = (e: KeyboardEvent) => {
+      if (e.key === "Escape") onClose();
+      if (e.key === "ArrowLeft" && hasPrev) onNavigate(index - 1);
+      if (e.key === "ArrowRight" && hasNext) onNavigate(index + 1);
+    };
     document.addEventListener("keydown", handle);
     return () => document.removeEventListener("keydown", handle);
-  }, [onClose]);
+  }, [onClose, onNavigate, index, hasPrev, hasNext]);
 
   return (
     <div
@@ -29,9 +47,35 @@ function Lightbox({ src, onClose }: { src: string; onClose: () => void }) {
         </svg>
       </button>
 
-      {/* Hint */}
+      {/* Prev button */}
+      {hasPrev && (
+        <button
+          onClick={(e) => { e.stopPropagation(); onNavigate(index - 1); }}
+          className="absolute left-4 top-1/2 -translate-y-1/2 w-10 h-10 flex items-center justify-center text-[#aaaaaa] hover:text-white transition-colors bg-[#1a1a1a] hover:bg-[#2a2a2a] border border-[#2a2a2a]"
+          aria-label="Previous"
+        >
+          <svg width="16" height="16" viewBox="0 0 16 16" fill="none">
+            <polyline points="10,2 4,8 10,14" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"/>
+          </svg>
+        </button>
+      )}
+
+      {/* Next button */}
+      {hasNext && (
+        <button
+          onClick={(e) => { e.stopPropagation(); onNavigate(index + 1); }}
+          className="absolute right-4 top-1/2 -translate-y-1/2 w-10 h-10 flex items-center justify-center text-[#aaaaaa] hover:text-white transition-colors bg-[#1a1a1a] hover:bg-[#2a2a2a] border border-[#2a2a2a]"
+          aria-label="Next"
+        >
+          <svg width="16" height="16" viewBox="0 0 16 16" fill="none">
+            <polyline points="6,2 12,8 6,14" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"/>
+          </svg>
+        </button>
+      )}
+
+      {/* Counter / hint */}
       <span className="absolute bottom-4 left-1/2 -translate-x-1/2 text-xs text-[#777777] tracking-widest uppercase select-none">
-        Click anywhere or press Esc to close
+        {images.length > 1 ? `${index + 1} / ${images.length} · ` : ""}Click anywhere or press Esc to close
       </span>
 
       <img
@@ -50,7 +94,7 @@ function TimelineList({
   onLightbox,
 }: {
   entries: TimelineEntry[];
-  onLightbox: (src: string) => void;
+  onLightbox: (images: string[], index: number) => void;
 }) {
   return (
     <div className="relative">
@@ -87,10 +131,10 @@ function TimelineList({
                 {item.description}
               </p>
 
-              {/* Thumbnail — opens lightbox */}
+              {/* Single thumbnail — opens lightbox */}
               {item.image && (
                 <button
-                  onClick={() => onLightbox(item.image!)}
+                  onClick={() => onLightbox([item.image!], 0)}
                   className="mt-4 block cursor-zoom-in"
                   aria-label="View full image"
                 >
@@ -114,7 +158,7 @@ function TimelineList({
                   {item.images.map((src, idx) => (
                     <button
                       key={idx}
-                      onClick={() => onLightbox(src)}
+                      onClick={() => onLightbox(item.images!, idx)}
                       className="shrink-0 cursor-zoom-in"
                       aria-label={`View screen ${idx + 1}`}
                     >
@@ -166,7 +210,7 @@ function TimelineList({
 }
 
 export default function Background() {
-  const [lightbox, setLightbox] = useState<string | null>(null);
+  const [lightbox, setLightbox] = useState<{ images: string[]; index: number } | null>(null);
 
   return (
     <section id="background" className="py-32 px-6 border-t border-[#1e1e1e] bg-[#0a0a0a]">
@@ -193,12 +237,19 @@ export default function Background() {
         </div>
 
         {/* Single unified timeline */}
-        <TimelineList entries={timeline} onLightbox={setLightbox} />
+        <TimelineList entries={timeline} onLightbox={(images, index) => setLightbox({ images, index })} />
 
       </div>
 
       {/* Lightbox overlay */}
-      {lightbox && <Lightbox src={lightbox} onClose={() => setLightbox(null)} />}
+      {lightbox && (
+        <Lightbox
+          images={lightbox.images}
+          index={lightbox.index}
+          onClose={() => setLightbox(null)}
+          onNavigate={(i) => setLightbox({ images: lightbox.images, index: i })}
+        />
+      )}
     </section>
   );
 }
