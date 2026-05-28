@@ -33,9 +33,9 @@ const layers = [
 ];
 
 const insights = [
-  "LLM behaviour on sensitive inputs is model-dependent and cannot be consistently audited across deployments.",
-  "Deterministic preprocessing is required for GDPR-compliant AI systems in production environments.",
-  "False positives in rule-based classification are acceptable under GDPR: avoiding missed sensitive data takes priority over routing efficiency.",
+  "LLM behaviour on sensitive inputs is model-dependent and cannot be reliably audited across deployments.",
+  "Deterministic preprocessing is required for GDPR-compliant systems in production.",
+  "Rule-based filters will generate false positives, but under GDPR this is acceptable compared to missed sensitive data.",
 ];
 
 export default function Thesis() {
@@ -76,8 +76,7 @@ export default function Thesis() {
           <div className="mb-6">
             <p className="text-xs text-[#686868] tracking-widest uppercase mb-3">System Context</p>
             <p className="text-[#D0D0D0] text-sm leading-relaxed">
-              During evaluation of HAMK's public website chatbot, a GDPR Article 9 sensitive query
-              was processed directly by an LLM with no prior detection or routing controls.
+              A GDPR Article 9 sensitive query was processed directly by an LLM in HAMK's public chatbot without prior detection or routing controls.
               There was no mechanism to handle it differently from other requests.
               This thesis designed a privacy-first RAG architecture combining a verified knowledge base (ChromaDB),
               deterministic classification layers, and selective LLM inference:
@@ -88,8 +87,7 @@ export default function Thesis() {
             <p className="text-xs text-[#686868] tracking-widest uppercase mb-3">Decision Point</p>
             <p className="text-[#D0D0D0] text-sm leading-relaxed">
               An initial prototype used an LLM-based classifier as the primary routing mechanism.
-              Behaviour was inconsistent across models (gpt-4o-mini vs llama3.2),
-              producing classification outcomes that could not be reliably audited.
+              The system showed inconsistent outputs across models (gpt-4o-mini vs llama3.2), making the LLM-based classifier unreliable for auditability.
               This led to a redesign: deterministic rules became the primary control layer,
               with LLMs downgraded to a fallback role.
             </p>
@@ -140,14 +138,11 @@ export default function Thesis() {
         {/* Engineering Insights */}
         <div className="mb-8 px-8 py-6 border-l-2 border-[#00C896]/50 bg-[#0d0d0d]">
           <p className="text-xs text-[#00C896] tracking-widest uppercase mb-4">Engineering Insights</p>
-          <ul className="flex flex-col gap-3">
+          <div className="flex flex-col gap-3">
             {insights.map((insight, i) => (
-              <li key={i} className="flex items-start gap-3 text-sm text-[#D0D0D0]">
-                <span className="text-[#00C896]/60 mt-0.5 shrink-0">→</span>
-                {insight}
-              </li>
+              <p key={i} className="text-sm text-[#D0D0D0] leading-relaxed">{insight}</p>
             ))}
-          </ul>
+          </div>
         </div>
 
         {/* Key Outcome */}
