@@ -5,7 +5,7 @@ export const skills = [
   },
   {
     category: "AI & Machine Learning",
-    items: ["RAG Pipelines", "ChromaDB", "MCP Servers", "LLM Integration", "Agentic AI", "Prompt Engineering", "Hugging Face", "scikit-learn"],
+    items: ["RAG Pipelines", "ChromaDB", "MCP Servers", "LLM Integration", "Prompt Engineering", "Hugging Face", "scikit-learn"],
   },
   {
     category: "Languages & Frameworks",
@@ -31,19 +31,20 @@ export const projects = [
     title: "accommodation-chatbot",
     tagline: "Thesis concepts, working tools",
     description:
-      "My first Finnish summer was spent at HAMK's service desk handling repetitive student arrival emails, exactly the kind of task automation solves better. Built with Claude Code as a hands-on extension of my GDPR-compliant AI chatbot research: RAG on a verified accommodation knowledge base, plus a custom MCP server for real agentic tool use. The thesis privacy classifier runs on every request, routing sensitive queries to human support instead of the LLM.",
+      "My first Finnish summer was spent at HAMK's service desk handling repetitive student arrival emails, exactly the kind of task automation solves better. Built with Claude Code as a hands-on extension of my GDPR-compliant AI chatbot research: RAG on a verified accommodation knowledge base, plus a custom MCP server exposing live tools to the LLM. The thesis privacy classifier runs on every request, routing sensitive queries to human support instead of the LLM.",
     tech: ["Python", "Flask", "ChromaDB", "Ollama", "MCP Server", "RAG"],
     github: "https://github.com/hongqian-li/accommodation-chatbot",
     highlights: [
       "4 live MCP tools: VR train schedules, weather, housing listings, web search",
       "Web search fallback when RAG confidence is low",
-      "Built with Claude Code, turning thesis research into a working agentic app",
+      "Privacy classifier defaults to human routing on uncertain input — fail safe, not fail open",
+      "Built with Claude Code as a practical extension of the thesis privacy architecture",
     ],
   },
   {
     number: "02",
     title: "Azure Cloud File Sharing App",
-    tagline: "Enterprise-grade cloud infrastructure from scratch",
+    tagline: "Production-style Azure infrastructure built with Terraform",
     description:
       "The capstone for Cloud Computing at UAS Technikum Wien (Erasmus 2025/26), synthesising a semester of hands-on Terraform labs and Azure service work into one fully architected application. A Flask file-sharing app backed by Azure Blob Storage and SQL Database, deployed across a three-tier private network: Application Gateway as the single public entry point, App Service on a delegated subnet, and backend services behind private endpoints with no direct internet access. Every resource is defined via Terraform across five sequential phases, no manual portal configuration.",
     tech: ["Azure", "Terraform", "Python", "Flask", "Blob Storage", "Azure SQL"],
@@ -52,6 +53,7 @@ export const projects = [
       "Three-tier network: App Gateway / App Service / private endpoints",
       "Blob Storage and SQL isolated behind private endpoints, no public data access",
       "Terraform across 5 phases: networking, storage, DB, app, gateway",
+      "Application Insights for monitoring; secrets injected via Terraform environment variables, no hardcoded credentials",
       "€237/month Azure cost estimate (Norway East, Dec 2024) — App Gateway accounts for 78% of spend, the price of eliminating any direct public endpoint",
     ],
   },
