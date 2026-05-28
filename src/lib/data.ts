@@ -43,6 +43,7 @@ export type TimelineEntry = {
   github?: string;
   certificate?: string;
   image?: string;
+  imagePosition?: string;
   images?: string[];
 };
 
@@ -143,6 +144,7 @@ export const timeline: TimelineEntry[] = [
     role: "Progress Advisor & MC",
     org: "EF English First, Chengdu, Sichuan, China",
     image: "/images/ef-mc.jpeg",
+    imagePosition: "95%",
     description:
       "Worked with students aged 3–8 on study planning. Served as NPS specialist, helped drive campus NPS into the top 10 nationally across all EF China campuses. Managed student retention. Hosted the annual gala event twice as MC and provided voice-over for awards ceremony videos.",
   },

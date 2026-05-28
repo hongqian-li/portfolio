@@ -145,6 +145,7 @@ function TimelineList({
                       width: 200,
                       height: 133,
                       objectFit: "cover",
+                      objectPosition: item.imagePosition ?? "center",
                       borderRadius: 4,
                       display: "block",
                     }}
