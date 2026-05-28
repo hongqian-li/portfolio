@@ -46,14 +46,14 @@ export default function Projects() {
                   {project.tagline}
                 </p>
 
-                <p className="text-[#C8C8C8] text-sm leading-relaxed mb-6 max-w-2xl">
+                <p className="text-[#D0D0D0] text-sm leading-relaxed mb-6 max-w-2xl">
                   {project.description}
                 </p>
 
                 {/* Highlights */}
                 <ul className="flex flex-col gap-1.5 mb-6">
                   {project.highlights.map((h, j) => (
-                    <li key={j} className="flex items-start gap-2 text-sm text-[#C8C8C8]">
+                    <li key={j} className="flex items-start gap-2 text-sm text-[#D0D0D0]">
                       <span className="text-[#00C896] mt-1 text-xs">→</span>
                       {h}
                     </li>
@@ -65,7 +65,7 @@ export default function Projects() {
                   {project.tech.map((t) => (
                     <span
                       key={t}
-                      className="text-xs px-2.5 py-1 bg-[#111111] text-[#C8C8C8] border border-[#1e1e1e]"
+                      className="text-xs px-2.5 py-1 bg-[#111111] text-[#D0D0D0] border border-[#1e1e1e]"
                     >
                       {t}
                     </span>
@@ -80,7 +80,7 @@ export default function Projects() {
                     href={project.github}
                     target="_blank"
                     rel="noopener noreferrer"
-                    className="flex items-center gap-2 text-xs text-[#444444] hover:text-[#00C896] transition-colors border border-[#1e1e1e] hover:border-[#00C896]/40 px-3 py-2 group/link"
+                    className="flex items-center gap-2 text-xs text-[#686868] hover:text-[#00C896] transition-colors border border-[#1e1e1e] hover:border-[#00C896]/40 px-3 py-2 group/link"
                     aria-label={`View ${project.title} on GitHub`}
                   >
                     <svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor">
@@ -90,7 +90,7 @@ export default function Projects() {
                     <span className="group-hover/link:translate-x-0.5 group-hover/link:-translate-y-0.5 transition-transform">↗</span>
                   </a>
                 ) : (
-                  <span className="text-xs text-[#333333] border border-[#1a1a1a] px-3 py-2">
+                  <span className="text-xs text-[#777777] border border-[#1a1a1a] px-3 py-2">
                     Thesis
                   </span>
                 )}

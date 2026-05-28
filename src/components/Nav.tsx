@@ -29,9 +29,10 @@ export default function Nav() {
         <a
           href="#hero"
           onClick={(e) => { e.preventDefault(); handleNavClick("#hero"); }}
-          className="font-heading font-bold text-sm tracking-widest uppercase text-[#fafafa] hover:text-[#00C896] transition-colors"
+          className="font-bold text-sm tracking-widest uppercase text-[#fafafa] hover:text-[#00C896] transition-colors"
+          style={{ fontFamily: "var(--font-space-mono)" }}
         >
-          HL
+          HQ·L
         </a>
 
         {/* Desktop nav */}
@@ -40,7 +41,7 @@ export default function Nav() {
             <li key={href}>
               <button
                 onClick={() => handleNavClick(href)}
-                className="text-sm text-[#C8C8C8] hover:text-[#fafafa] transition-colors tracking-wide cursor-pointer"
+                className="text-sm text-[#D0D0D0] hover:text-[#fafafa] transition-colors tracking-wide cursor-pointer"
               >
                 {label}
               </button>
@@ -68,7 +69,7 @@ export default function Nav() {
               <li key={href}>
                 <button
                   onClick={() => handleNavClick(href)}
-                  className="text-base text-[#C8C8C8] hover:text-[#fafafa] transition-colors w-full text-left"
+                  className="text-base text-[#D0D0D0] hover:text-[#fafafa] transition-colors w-full text-left"
                 >
                   {label}
                 </button>

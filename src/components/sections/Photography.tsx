@@ -32,9 +32,9 @@ export default function Photography() {
               <span className="text-[#00C896]">Terminal</span>
             </h2>
           </div>
-          <p className="text-[#C8C8C8] text-sm max-w-xs leading-relaxed lg:pb-2">
+          <p className="text-[#D0D0D0] text-sm max-w-xs leading-relaxed lg:pb-2">
             Photography is how I slow down and pay attention.
-            The same eye that frames a shot — framing a problem,
+            The same instinct that frames a shot frames a problem,
             a system, an explanation.
           </p>
         </div>

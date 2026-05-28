@@ -18,11 +18,11 @@ export default function Skills() {
             >
               What I Build
               <br />
-              <span className="text-[#C8C8C8]">With</span>
+              <span className="text-[#D0D0D0]">With</span>
             </h2>
           </div>
-          <p className="text-[#C8C8C8] text-sm max-w-xs leading-relaxed lg:pb-2">
-            Azure, Terraform, Python, and privacy-first AI — from local prototype to cloud deployment.
+          <p className="text-[#D0D0D0] text-sm max-w-xs leading-relaxed lg:pb-2">
+            Python, Azure, Terraform, and privacy-first AI. From local prototype to cloud deployment.
           </p>
         </div>
 
@@ -31,7 +31,7 @@ export default function Skills() {
           {skills.map((group, i) => (
             <div key={i} className="bg-[#111111] p-8 hover:bg-[#161616] transition-colors group">
               <div className="flex items-start justify-between mb-6">
-                <span className="text-xs text-[#444444] font-mono">
+                <span className="text-xs text-[#686868] font-mono">
                   0{i + 1}
                 </span>
                 <span className="w-6 h-px bg-[#00C896] mt-2 group-hover:w-12 transition-all duration-300" />
@@ -43,7 +43,7 @@ export default function Skills() {
                 {group.items.map((item) => (
                   <span
                     key={item}
-                    className="px-3 py-1.5 text-xs text-[#C8C8C8] border border-[#1e1e1e] hover:border-[#00C896]/50 hover:text-[#fafafa] transition-all duration-200 cursor-default"
+                    className="px-3 py-1.5 text-xs text-[#D0D0D0] border border-[#1e1e1e] hover:border-[#00C896]/50 hover:text-[#fafafa] transition-all duration-200 cursor-default"
                   >
                     {item}
                   </span>
@@ -55,13 +55,13 @@ export default function Skills() {
 
         {/* Currently learning / growing */}
         <div className="mt-16 pt-8 border-t border-[#1e1e1e] flex flex-col sm:flex-row gap-4 items-start sm:items-center">
-          <span className="text-xs text-[#444444] tracking-widest uppercase shrink-0">
+          <span className="text-xs text-[#686868] tracking-widest uppercase shrink-0">
             Also exploring
           </span>
           <div className="w-8 h-px bg-[#2a2a2a] hidden sm:block" />
           <div className="flex flex-wrap gap-2">
-            {["N8N", "Microsoft Power Platform", "Prompt Engineering"].map((item) => (
-              <span key={item} className="text-xs text-[#555555] px-2 py-1 border border-dashed border-[#2a2a2a]">
+            {["Copilot Studio", "Power Automate", "LangChain", "N8N"].map((item) => (
+              <span key={item} className="text-xs text-[#777777] px-2 py-1 border border-dashed border-[#2a2a2a]">
                 {item}
               </span>
             ))}

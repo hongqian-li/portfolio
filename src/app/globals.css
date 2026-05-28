@@ -14,6 +14,7 @@
 
   --font-heading: var(--font-syne);
   --font-body: var(--font-inter);
+  --font-logo: var(--font-space-mono);
 }
 
 *,

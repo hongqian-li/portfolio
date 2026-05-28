@@ -1,19 +1,27 @@
 export const skills = [
   {
     category: "Cloud & Infrastructure",
-    items: ["Azure", "Terraform", "Docker", "Kubernetes", "Azure Functions"],
+    items: ["Azure", "Terraform", "Docker", "Linux", "Nginx", "Apache", "Kubernetes"],
   },
   {
-    category: "AI & Development",
-    items: ["Python", "RAG Pipelines", "ChromaDB", "MCP Servers", "LLM Integration", "Agentic AI"],
+    category: "AI & Machine Learning",
+    items: ["RAG Pipelines", "ChromaDB", "MCP Servers", "LLM Integration", "Agentic AI", "Prompt Engineering"],
   },
   {
-    category: "DevOps & Security",
-    items: ["GitHub Actions", "CI/CD", "Security by Design", "Zero Trust", "GDPR Compliance"],
+    category: "Languages & Frameworks",
+    items: ["Python", "Flask", "Java", "SQL", "Bash", "HTML/CSS", "REST APIs", "UiPath (RPA)", "Robot Framework"],
   },
   {
-    category: "Compliance & Regulation",
-    items: ["EU AI Act", "GDPR Article 9", "Privacy by Design", "Risk Classification"],
+    category: "DevOps & Tooling",
+    items: ["GitHub Actions", "CI/CD", "Git", "Azure DevOps", "Agile/Scrum", "Jira", "Postman", "Figma"],
+  },
+  {
+    category: "Data & Analytics",
+    items: ["Power BI", "Excel", "Google Analytics"],
+  },
+  {
+    category: "Compliance & Security",
+    items: ["EU AI Act", "GDPR Article 9", "Privacy by Design", "Zero Trust", "Security by Design", "Risk Classification"],
   },
 ];
 
@@ -23,7 +31,7 @@ export const projects = [
     title: "accommodation-chatbot",
     tagline: "Agentic AI with privacy built in",
     description:
-      "An agentic AI application that goes beyond Q&A — a custom MCP server exposes 4 tools, letting the AI take real actions. Grounded in a verified knowledge base via RAG (ChromaDB + Ollama/llama3), with a 3-layer GDPR privacy classifier baked into every request.",
+      "An agentic AI application that goes beyond Q&A. A custom MCP server exposes 4 tools, letting the AI take real actions. Grounded in a verified knowledge base via RAG (ChromaDB + Ollama/llama3), with a 3-layer GDPR privacy classifier baked into every request.",
     tech: ["Python", "MCP Server", "ChromaDB", "Ollama", "Flask", "RAG"],
     github: "https://github.com/hongqian-li/accommodation-chatbot",
     highlights: [
@@ -34,6 +42,20 @@ export const projects = [
   },
   {
     number: "02",
+    title: "Azure Cloud File Sharing App",
+    tagline: "Enterprise-grade cloud infrastructure from scratch",
+    description:
+      "Secure file sharing application built on Azure as the final project for Cloud Computing at UAS Technikum Wien. Users can upload, store, and manage files through a Flask web app backed by Azure Blob Storage and SQL Database. Backend services are fully private — only reachable through Application Gateway.",
+    tech: ["Azure", "Terraform", "Python", "Flask", "Blob Storage", "Azure SQL"],
+    github: "https://github.com/hongqian-li/cloud-computing-technikum-wien/tree/main/azure-cloud-file-sharing-app",
+    highlights: [
+      "Full IaC deployment via Terraform",
+      "Private networking with Application Gateway",
+      "Azure Blob Storage + SQL Database integration",
+    ],
+  },
+  {
+    number: "03",
     title: "Enterprise AI Chatbot (Thesis)",
     tagline: "Security by Design for production AI",
     description:
@@ -66,7 +88,7 @@ export const timeline: TimelineEntry[] = [
     link: "https://run.eu/products/bip-futexplo-01",
     image: "/images/run-eu-future-explorations.jpeg",
     description:
-      "Designed a smart curtain prototype for Getzner Textil AG — integrating intelligence into textile to regulate indoor temperature, lighting, and wellbeing in a single product. Multicultural international team project.",
+      "Designed a smart curtain prototype for Getzner Textil AG, integrating intelligence into textile to regulate indoor temperature, lighting, and wellbeing in a single product. Multicultural international team project.",
   },
   {
     period: "Feb – May 2026",
@@ -80,14 +102,14 @@ export const timeline: TimelineEntry[] = [
     role: "Exchange Semester – IT Infrastructure & Cloud Computing",
     org: "UAS Technikum Wien, Vienna, Austria",
     description:
-      "Focused on cloud computing and IT infrastructure. Part of an international student cohort in Vienna.",
+      "Five months in Vienna as an Erasmus student, the most memorable of my degree. Built a wide social circle with students from across the world. Focused on cloud computing and IT infrastructure, with additional courses spanning industrial informatics, Python, and international marketing.",
   },
   {
     period: "Jun – Aug 2025",
     role: "Project Intern",
     org: "HAMK Häme University of Applied Sciences, Hämeenlinna, Finland",
     description:
-      "Part of the HAMK Home Design Factory project. Conducted user research with 30+ student interviews to identify retention challenges. Designed an app prototype (Figma, 8 screens) and presented technical architecture and business case to stakeholders at Hämeenlinna City Hall.",
+      "Invited to join based on my previous experience at HAMK and local knowledge of Hämeenlinna. The project aimed to increase the number of students staying in Hämeenlinna after graduation. Conducted user research with 30+ student interviews to identify retention challenges. Designed an app prototype (Figma, 8 screens) and presented technical architecture and business case to stakeholders at Hämeenlinna City Hall.",
   },
   {
     period: "Apr – May 2025",
@@ -96,7 +118,7 @@ export const timeline: TimelineEntry[] = [
     link: "https://run-eu.eu/2025/03/01/bip-smart-everything-connecting-artificial-intelligence-tools-with-business-ideas/",
     image: "/images/run-eu-smart-everything.jpeg",
     description:
-      "Built an AI tool to process paper and digital invoices — automatic data extraction, calculations, and summaries. Coded front-end and integrated AI models using Python and Hugging Face. Recognised as one of the best presenters at the final showcase.",
+      "Built an AI tool to process paper and digital invoices: automatic data extraction, calculations, and summaries. Coded front-end and integrated AI models using Python and Hugging Face. Recognised as one of the best presenters at the final showcase.",
   },
   {
     period: "Oct – Dec 2024",
@@ -106,7 +128,7 @@ export const timeline: TimelineEntry[] = [
     certificate: "/images/certificate-demola.jpeg",
     image: "/images/demola.jpeg",
     description:
-      "Collaborated on the 'AI where you need it?' innovation project. Built Content Pilot — an AI tool for content creators. Conducted user research, iterated on product design, visited M-Files office, and presented at Demola National Finals supported by Business Finland.",
+      "Collaborated on the 'AI where you need it?' innovation project. Designed and prototyped Content Pilot, a concept for an AI tool for content creators. Conducted user research, iterated on product design, visited M-Files office, and presented at Demola National Finals supported by Business Finland.",
   },
   {
     period: "Oct – Nov 2024",
@@ -123,21 +145,21 @@ export const timeline: TimelineEntry[] = [
     role: "Customer Service Specialist",
     org: "HAMK Häme University of Applied Sciences, Hämeenlinna, Finland",
     description:
-      "Handled 30+ daily student inquiries about housing, arrival, and orientation. Tracked 900+ requests in Excel. Coordinated arrival logistics for 100+ international students.",
+      "First summer job in Finland. Handled 30+ daily student inquiries about housing, arrival, and orientation. Tracked 900+ requests in Excel. Coordinated arrival logistics for 100+ international students. Received positive recognition from the HAMK kiinteistöpalvelut team.",
   },
   {
     period: "Aug 2023",
     role: "Started BBA – Degree Programme in Computer Applications (DevOps / Delivering Software Products)",
     org: "HAMK Häme University of Applied Sciences, Hämeenlinna, Finland",
     description:
-      "Career pivot: moved from China to Finland to retrain in software and cloud engineering.",
+      "Career pivot: moved from China to Finland to build a systematic IT foundation, covering programming, web development, data, machine learning, and automation. The degree laid the groundwork for specialising in software and cloud engineering.",
   },
   {
     period: "Oct 2020 – Aug 2023",
     role: "Student Development Coach",
     org: "Easyke (易课教育), Chengdu, Sichuan, China",
     description:
-      "Guided 100+ international students (Australia, Canada, UK) with study plans and course selection. Weekly check-ins with students and parents. Managed renewals and satisfaction.",
+      "Guided 100+ Chinese students pursuing education abroad (Australia, Canada, UK) with study plans and course selection. Weekly check-ins with students and parents. Handled daily administrative issues and managed renewals and satisfaction.",
   },
   {
     period: "Dec 2018 – Apr 2020",
@@ -145,7 +167,7 @@ export const timeline: TimelineEntry[] = [
     org: "EF English First, Chengdu, Sichuan, China",
     image: "/images/ef-mc.jpeg",
     description:
-      "Worked with students aged 3–8. Led initiative to improve campus NPS across 10 Chengdu campuses — from bottom-ranked nationally to top 10. Hosted EF Chengdu annual gala events as MC.",
+      "Worked with students aged 3–8 on study planning. Served as NPS specialist, helped drive campus NPS into the top 10 nationally across all EF China campuses. Managed student retention. Hosted the annual gala event twice as MC and provided voice-over for awards ceremony videos.",
   },
   {
     period: "2014 – 2018",

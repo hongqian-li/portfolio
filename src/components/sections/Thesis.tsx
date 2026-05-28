@@ -8,7 +8,7 @@ const layers = [
     title: "Keyword Detection",
     subtitle: "GDPR Article 9",
     description:
-      "Deterministic filtering for special category data — health, religion, ethnicity, political opinion, biometric identifiers. Catches explicit references with zero LLM overhead.",
+      "Deterministic filtering for special category data: health, religion, ethnicity, political opinion, biometric identifiers. Catches explicit references with zero LLM overhead.",
     result: "Most reliable layer",
     accent: true,
   },
@@ -17,7 +17,7 @@ const layers = [
     title: "Prompt Injection Filter",
     subtitle: "Anti-manipulation",
     description:
-      "Pattern-based detection for attempts to override privacy constraints. Stops adversarial inputs before they reach the LLM — no model can be instructed to bypass this layer.",
+      "Pattern-based detection for attempts to override privacy constraints. Stops adversarial inputs before they reach the LLM. No model can be instructed to bypass this layer.",
     result: "Stops manipulation",
     accent: false,
   },
@@ -26,7 +26,7 @@ const layers = [
     title: "LLM Fallback",
     subtitle: "Context classification",
     description:
-      "llama3.2 (local) and gpt-4o-mini (Azure) as a last-resort classifier for ambiguous inputs. Research showed gpt-4o-mini failed an indirect sensitive query that llama3.2 blocked — proving LLMs alone are insufficient for compliance.",
+      "llama3.2 (local) and gpt-4o-mini (Azure) as a last-resort classifier for ambiguous inputs. Research showed gpt-4o-mini failed an indirect sensitive query that llama3.2 blocked, proving LLMs alone are insufficient for compliance.",
     result: "Last resort only",
     accent: false,
   },
@@ -47,16 +47,16 @@ export default function Thesis() {
             >
               Security by Design
               <br />
-              for Enterprise AI Chatbots
+              for Enterprise <span className="text-[#00C896]">AI Chatbots</span>
             </h2>
           </div>
           <div className="flex flex-col justify-end gap-4">
-            <p className="text-[#C8C8C8] text-sm leading-relaxed">
+            <p className="text-[#D0D0D0] text-sm leading-relaxed">
               Graduating June 2026 · HAMK Häme University of Applied Sciences
             </p>
             <div className="flex flex-wrap gap-2">
               {["Azure", "Terraform", "Norway East", "GDPR", "EU AI Act", "Zero Trust"].map((tag) => (
-                <span key={tag} className="text-xs px-2.5 py-1 border border-[#2a2a2a] text-[#555555]">
+                <span key={tag} className="text-xs px-2.5 py-1 border border-[#2a2a2a] text-[#777777]">
                   {tag}
                 </span>
               ))}
@@ -72,14 +72,14 @@ export default function Thesis() {
             "Deterministic keyword detection outperforms LLM-based classification for GDPR compliance.
             gpt-4o-mini{" "}
             <span className="text-[#ff6b6b]">failed</span> an indirect sensitive query that llama3.2{" "}
-            <span className="text-[#00C896]">correctly blocked</span> —
+            <span className="text-[#00C896]">correctly blocked</span>,
             proving LLMs alone are unreliable for compliance-critical use cases."
           </p>
         </div>
 
         {/* 3-layer system */}
         <div className="mb-4">
-          <p className="text-xs text-[#444444] tracking-widest uppercase mb-8">
+          <p className="text-xs text-[#686868] tracking-widest uppercase mb-8">
             3-Layer Privacy Classification System
           </p>
           <div className="grid grid-cols-1 md:grid-cols-3 gap-px bg-[#1e1e1e]">
@@ -91,14 +91,14 @@ export default function Thesis() {
                 }`}
               >
                 <div className="flex items-center justify-between">
-                  <span className="font-mono text-xs text-[#333333]">{layer.number}</span>
+                  <span className="font-mono text-xs text-[#777777]">{layer.number}</span>
                   {layer.accent && (
                     <span className="text-xs text-[#00C896] border border-[#00C896]/30 px-2 py-0.5">
                       {layer.result}
                     </span>
                   )}
                   {!layer.accent && (
-                    <span className="text-xs text-[#444444] border border-[#1e1e1e] px-2 py-0.5">
+                    <span className="text-xs text-[#686868] border border-[#1e1e1e] px-2 py-0.5">
                       {layer.result}
                     </span>
                   )}
@@ -110,7 +110,7 @@ export default function Thesis() {
                   <p className="text-[#00C896] text-xs tracking-widest uppercase mb-4">
                     {layer.subtitle}
                   </p>
-                  <p className="text-[#C8C8C8] text-sm leading-relaxed">
+                  <p className="text-[#D0D0D0] text-sm leading-relaxed">
                     {layer.description}
                   </p>
                 </div>
@@ -127,8 +127,8 @@ export default function Thesis() {
             { label: "Architecture", value: "Zero Trust + EU AI Act" },
           ].map(({ label, value }) => (
             <div key={label}>
-              <p className="text-xs text-[#444444] tracking-widest uppercase mb-1">{label}</p>
-              <p className="text-sm text-[#C8C8C8]">{value}</p>
+              <p className="text-xs text-[#686868] tracking-widest uppercase mb-1">{label}</p>
+              <p className="text-sm text-[#D0D0D0]">{value}</p>
             </div>
           ))}
         </div>

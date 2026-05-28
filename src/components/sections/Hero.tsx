@@ -32,14 +32,14 @@ export default function Hero() {
 
           <h1
             className="font-heading font-extrabold leading-[0.88] tracking-tight text-[#fafafa] mb-8"
-            style={{ fontSize: "clamp(3.5rem, 7vw, 7.5rem)" }}
+            style={{ fontSize: "clamp(2.8rem, 7vw, 7.5rem)" }}
           >
             Hongqian
             <br />
             <span className="text-[#00C896]">Li</span>
           </h1>
 
-          <p className="text-[#C8C8C8] text-sm tracking-[0.25em] uppercase font-medium mb-8">
+          <p className="text-[#D0D0D0] text-sm tracking-[0.25em] uppercase font-medium mb-8">
             AI &amp; Cloud Engineer — Tampere, Finland
           </p>
 
@@ -67,9 +67,24 @@ export default function Hero() {
                 e.preventDefault();
                 document.querySelector("#contact")?.scrollIntoView({ behavior: "smooth" });
               }}
-              className="px-6 py-3 border border-[#2a2a2a] hover:border-[#00C896] text-[#C8C8C8] hover:text-[#fafafa] text-sm tracking-wide transition-colors"
+              className="px-6 py-3 border border-[#2a2a2a] hover:border-[#00C896] text-[#D0D0D0] hover:text-[#fafafa] text-sm tracking-wide transition-colors"
             >
               Get in Touch
+            </a>
+          </div>
+
+          {/* Social links */}
+          <div className="mt-6 flex flex-wrap items-center gap-x-5 gap-y-2">
+            <a href="mailto:hongqi4nli@gmail.com" className="text-xs text-[#686868] hover:text-[#00C896] transition-colors tracking-wide">
+              hongqi4nli@gmail.com
+            </a>
+            <span className="text-[#2a2a2a] text-xs">·</span>
+            <a href="https://github.com/hongqian-li" target="_blank" rel="noopener noreferrer" className="text-xs text-[#686868] hover:text-[#00C896] transition-colors tracking-wide">
+              GitHub
+            </a>
+            <span className="text-[#2a2a2a] text-xs">·</span>
+            <a href="https://linkedin.com/in/hongqian-li-9508671a6" target="_blank" rel="noopener noreferrer" className="text-xs text-[#686868] hover:text-[#00C896] transition-colors tracking-wide">
+              LinkedIn
             </a>
           </div>
 
@@ -87,7 +102,7 @@ export default function Hero() {
           {/* Scroll indicator */}
           <div className="mt-16 lg:mt-20 flex items-center gap-4">
             <div className="w-px h-12 bg-gradient-to-b from-transparent to-[#2a2a2a]" />
-            <span className="text-xs text-[#333333] tracking-widest uppercase">Scroll</span>
+            <span className="text-xs text-[#777777] tracking-widest uppercase">Scroll</span>
           </div>
         </div>
       </div>

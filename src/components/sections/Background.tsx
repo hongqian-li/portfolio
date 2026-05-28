@@ -30,7 +30,7 @@ function Lightbox({ src, onClose }: { src: string; onClose: () => void }) {
       </button>
 
       {/* Hint */}
-      <span className="absolute bottom-4 left-1/2 -translate-x-1/2 text-xs text-[#555555] tracking-widest uppercase select-none">
+      <span className="absolute bottom-4 left-1/2 -translate-x-1/2 text-xs text-[#777777] tracking-widest uppercase select-none">
         Click anywhere or press Esc to close
       </span>
 
@@ -78,12 +78,12 @@ function TimelineList({
                   </h3>
                   <p className="text-sm mt-0.5 text-[#00C896]">{item.org}</p>
                 </div>
-                <span className="text-xs text-[#444444] font-mono shrink-0 pt-1 whitespace-nowrap">
+                <span className="text-xs text-[#686868] font-mono shrink-0 pt-1 whitespace-nowrap">
                   {item.period}
                 </span>
               </div>
 
-              <p className="text-[#C8C8C8] text-sm leading-relaxed mt-3">
+              <p className="text-[#D0D0D0] text-sm leading-relaxed mt-3">
                 {item.description}
               </p>
 
@@ -114,7 +114,7 @@ function TimelineList({
                   href={item.certificate}
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="mt-3 inline-flex items-center gap-1 text-xs text-[#444444] hover:text-[#00C896] transition-colors"
+                  className="mt-3 inline-flex items-center gap-1 text-xs text-[#686868] hover:text-[#00C896] transition-colors"
                 >
                   View Certificate ↗
                 </a>
@@ -142,16 +142,14 @@ export default function Background() {
               className="font-heading font-extrabold text-[#fafafa] leading-none"
               style={{ fontSize: "clamp(2.5rem, 6vw, 5rem)" }}
             >
-              Not a straight
+              Not a <span className="text-[#00C896] italic">straight</span>
               <br />
               line
             </h2>
           </div>
           <div className="flex flex-col justify-end">
-            <p className="text-[#C8C8C8] text-sm leading-relaxed max-w-sm">
-              My path from broadcast journalism to AI engineering is not career confusion —
-              it's a genuine differentiator. I understand both sides of the room:
-              the technical architecture, and the people who need to trust it.
+            <p className="text-[#D0D0D0] text-sm leading-relaxed max-w-sm">
+              My route from broadcast hosting and client-facing work to software engineering looks unconventional. It isn't. Every step sharpened a skill the next one needed: how to communicate, how to earn trust, and now the technical depth to back it up.
             </p>
           </div>
         </div>
