@@ -19,9 +19,9 @@ export const projects = [
     title: "Privacy-Conscious AI Support System",
     tech: ["Python", "Flask", "ChromaDB", "Ollama", "MCP Server", "RAG"],
     github: "https://github.com/hongqian-li/accommodation-chatbot",
-    context: "Built with Claude Code as a practical extension of thesis research, for the student housing queries I handled at HAMK's service desk.",
-    system: "RAG pipeline over a verified knowledge base with a custom MCP server exposing four live tools (VR train schedules, weather, housing listings, web search). Deterministic classifier routes sensitive queries to human support before any LLM processing — fail safe, not fail open.",
-    engineeringHighlight: "LLM-first routing was abandoned due to inconsistent behaviour across models — deterministic-first classification was chosen for auditability and GDPR compliance.",
+    context: "Built with Claude Code, derived from the thesis architecture, for the student housing queries I handled at HAMK's service desk.",
+    system: "RAG pipeline over a verified knowledge base with a custom MCP server exposing four live tools (VR train schedules, weather, housing listings, web search). Deterministic classifier routes sensitive queries to human support before any LLM processing. Fail-safe design: uncertain inputs route to human support, not to the model.",
+    engineeringHighlight: "LLM-first routing was abandoned due to inconsistent behaviour across models, which led to adopting deterministic-first classification for auditability and GDPR compliance.",
   },
   {
     number: "02",
@@ -30,7 +30,7 @@ export const projects = [
     github: "https://github.com/hongqian-li/cloud-computing-technikum-wien/tree/main/azure-cloud-file-sharing-app",
     context: "Erasmus cloud computing capstone at UAS Technikum Wien (2025/26): secure file sharing deployed on Azure with no manual portal configuration.",
     system: "Three-tier private network: Application Gateway as the only public entry point, App Service on a delegated subnet, Blob Storage and SQL behind private endpoints. Application Insights for monitoring; secrets injected via Terraform environment variables, no hardcoded credentials.",
-    engineeringHighlight: "Entire infrastructure across five phases provisioned through Terraform — €237/month cost estimate (Norway East, Dec 2024), App Gateway accounting for 78% of spend.",
+    engineeringHighlight: "Entire infrastructure across five phases provisioned through Terraform, with an estimated monthly cost of €237 (Norway East, Dec 2024). App Gateway accounts for 78% of spend.",
   },
 ];
 
@@ -116,7 +116,7 @@ export const timeline: TimelineEntry[] = [
     role: "Started BBA – Degree Programme in Computer Applications (DevOps / Delivering Software Products)",
     org: "HAMK Häme University of Applied Sciences, Hämeenlinna, Finland",
     description:
-      "Career pivot: moved from China to Finland to build a systematic IT foundation, covering programming, web development, data, machine learning, and automation. The degree laid the groundwork for specialising in software and cloud engineering.",
+      "Career pivot: moved from China to Finland to build a core IT foundation, covering programming, web development, data, machine learning, and automation. The degree led to a focus on software and cloud engineering.",
   },
   {
     period: "Oct 2020 – Aug 2023",
