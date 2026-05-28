@@ -123,7 +123,7 @@ export default function Thesis() {
         <div className="mb-14 px-8 py-6 border-l-2 border-[#00C896]/50 bg-[#0d0d0d]">
           <p className="text-xs text-[#00C896] tracking-widest uppercase mb-3">Key Finding</p>
           <p className="text-[#D0D0D0] text-sm leading-relaxed">
-            LLM behavior on sensitive data is model-dependent and cannot be independently audited.
+            LLM behaviour on sensitive data is model-dependent and cannot be independently audited.
             gpt-4o-mini passed a pregnancy-related query without flagging it;
             llama3.2 correctly escalated the same query after the keyword list was refined.
             For EU deployments under GDPR, this is a production risk:
