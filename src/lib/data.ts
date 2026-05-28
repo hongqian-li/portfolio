@@ -54,20 +54,6 @@ export const projects = [
       "Terraform across 5 phases: networking, storage, DB, app, gateway",
     ],
   },
-  {
-    number: "03",
-    title: "Enterprise AI Chatbot (Thesis)",
-    tagline: "Security by Design for production AI",
-    description:
-      "GDPR-compliant enterprise AI chatbot deployed on Azure with Terraform. Built a novel 3-layer privacy classification system and discovered that deterministic keyword detection outperforms LLM-based classifiers for compliance-critical use cases.",
-    tech: ["Azure", "Terraform", "Python", "GPT-4o-mini", "llama3.2", "IaC"],
-    github: null,
-    highlights: [
-      "Deployed to Norway East for GDPR data residency",
-      "Key finding: keyword detection beats LLMs for compliance",
-      "Zero Trust + EU AI Act transparency requirements",
-    ],
-  },
 ];
 
 export type TimelineEntry = {
