@@ -67,7 +67,7 @@ export default function Thesis() {
         {/* Context */}
         <div className="mb-14 p-8 border border-[#1e1e1e] bg-[#0d0d0d] relative overflow-hidden">
           <div className="absolute top-0 left-0 w-1 h-full bg-[#2a2a2a]" />
-          <p className="text-[#D0D0D0] text-sm leading-relaxed">
+          <p className="text-[#D0D0D0] text-sm leading-relaxed mb-4">
             While testing HAMK's official website chatbot, I found that a pregnancy-related question
             (GDPR Article 9 sensitive data) was passed directly to the LLM with no detection in place,
             and no mechanism to handle it differently from any other query.
@@ -75,6 +75,11 @@ export default function Thesis() {
             (ChromaDB + llama3.2 locally, Azure OpenAI in cloud):
             safe queries are answered from a verified knowledge base;
             sensitive ones are routed to a human agent.
+          </p>
+          <p className="text-[#D0D0D0] text-sm leading-relaxed">
+            An earlier prototype relied on the LLM classifier as the primary routing layer.
+            Inconsistent behaviour across gpt-4o-mini and llama3.2 made the approach difficult to audit reliably,
+            leading to the deterministic-first architecture.
           </p>
         </div>
 

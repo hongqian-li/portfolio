@@ -167,9 +167,9 @@ export const timeline: TimelineEntry[] = [
 ];
 
 export const nav = [
-  { label: "Skills", href: "#skills" },
   { label: "Projects", href: "#projects" },
   { label: "Thesis", href: "#thesis" },
+  { label: "Skills", href: "#skills" },
   { label: "Background", href: "#background" },
   { label: "Photography", href: "#photography" },
   { label: "Contact", href: "#contact" },

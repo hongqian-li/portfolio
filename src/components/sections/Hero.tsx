@@ -39,8 +39,12 @@ export default function Hero() {
             <span className="text-[#00C896]">Li</span>
           </h1>
 
-          <p className="text-[#D0D0D0] text-sm tracking-[0.25em] uppercase font-medium mb-8">
+          <p className="text-[#D0D0D0] text-sm tracking-[0.25em] uppercase font-medium mb-3">
             AI &amp; Cloud Engineer — Tampere, Finland
+          </p>
+
+          <p className="text-[#A0A0A0] text-sm leading-relaxed mb-8">
+            Specialising in secure and privacy-conscious AI systems on Azure.
           </p>
 
           <p className="text-[#E8E8E8] text-xl lg:text-2xl font-light leading-relaxed mb-12">
