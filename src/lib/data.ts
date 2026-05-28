@@ -45,13 +45,13 @@ export const projects = [
     title: "Azure Cloud File Sharing App",
     tagline: "Enterprise-grade cloud infrastructure from scratch",
     description:
-      "Secure file sharing application built on Azure as the final project for Cloud Computing at UAS Technikum Wien. Users can upload, store, and manage files through a Flask web app backed by Azure Blob Storage and SQL Database. Backend services are fully private — only reachable through Application Gateway.",
+      "The capstone for Cloud Computing at UAS Technikum Wien (Erasmus 2025/26), synthesising a semester of hands-on Terraform labs and Azure service work into one fully architected application. A Flask file-sharing app backed by Azure Blob Storage and SQL Database, deployed across a three-tier private network: Application Gateway as the single public entry point, App Service on a delegated subnet, and backend services behind private endpoints with no direct internet access. Every resource is defined via Terraform across five sequential phases, no manual portal configuration.",
     tech: ["Azure", "Terraform", "Python", "Flask", "Blob Storage", "Azure SQL"],
     github: "https://github.com/hongqian-li/cloud-computing-technikum-wien/tree/main/azure-cloud-file-sharing-app",
     highlights: [
-      "Full IaC deployment via Terraform",
-      "Private networking with Application Gateway",
-      "Azure Blob Storage + SQL Database integration",
+      "Three-tier network: App Gateway / App Service / private endpoints",
+      "Blob Storage and SQL isolated behind private endpoints, no public data access",
+      "Terraform across 5 phases: networking, storage, DB, app, gateway",
     ],
   },
   {
