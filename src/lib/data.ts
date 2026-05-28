@@ -66,14 +66,14 @@ export const timeline: TimelineEntry[] = [
     role: "Exchange Semester – IT Infrastructure & Cloud Computing",
     org: "UAS Technikum Wien, Vienna, Austria",
     description:
-      "Five months in Vienna as an Erasmus student, the most memorable of my degree. Built a wide social circle with students from across the world. Focused on cloud computing and IT infrastructure, with additional courses spanning industrial informatics, Python, and international marketing.",
+      "Five months in Vienna as an Erasmus student, the most memorable of my degree. Worked in an international student environment with peers from across Europe and Asia. Focused on cloud computing and IT infrastructure, with additional courses spanning industrial informatics, Python, and international marketing.",
   },
   {
     period: "Jun – Aug 2025",
     role: "Project Intern",
     org: "HAMK Häme University of Applied Sciences, Hämeenlinna, Finland",
     description:
-      "Invited to join based on my previous experience at HAMK and local knowledge of Hämeenlinna. The project aimed to increase the number of students staying in Hämeenlinna after graduation. Conducted user research with 30+ student interviews to identify retention challenges. Designed an app prototype (Figma, 8 screens) and presented technical architecture and business case to stakeholders at Hämeenlinna City Hall.",
+      "Invited to join based on my previous experience at HAMK and local knowledge of Hämeenlinna. The project aimed to increase the number of students staying in Hämeenlinna after graduation. Conducted user research with 30+ student interviews to identify retention challenges. Designed an app prototype (Figma, 8 screens) and presented system architecture and implementation details to stakeholders at Hämeenlinna City Hall.",
   },
   {
     period: "Apr – May 2025",
@@ -123,7 +123,7 @@ export const timeline: TimelineEntry[] = [
     role: "Student Development Coach",
     org: "Easyke (易课教育), Chengdu, Sichuan, China",
     description:
-      "Guided 100+ Chinese students pursuing education abroad (Australia, Canada, UK) with study plans and course selection. Weekly check-ins with students and parents. Handled daily administrative issues and managed renewals and satisfaction.",
+      "Guided 100+ Chinese students pursuing education abroad (Australia, Canada, UK) with study plans and course selection. Weekly check-ins with students and parents. Handled daily administrative issues, subscription renewals, and customer follow-ups.",
   },
   {
     period: "Dec 2018 – Apr 2020",

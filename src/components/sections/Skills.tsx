@@ -22,7 +22,7 @@ export default function Skills() {
             </h2>
           </div>
           <p className="text-[#D0D0D0] text-sm max-w-xs leading-relaxed lg:pb-2">
-            Python, Azure, Terraform, and privacy-first AI. From local prototype to cloud deployment.
+            Python, Azure, Terraform, and privacy-first AI. Experience spanning local development and cloud deployment on Azure.
           </p>
         </div>
 
