@@ -40,6 +40,7 @@ export type TimelineEntry = {
   org: string;
   description: string;
   link?: string;
+  github?: string;
   certificate?: string;
   image?: string;
 };
@@ -80,6 +81,7 @@ export const timeline: TimelineEntry[] = [
     role: "RUN-EU: BIP Smart Everything",
     org: "Universidad de Burgos, Burgos, Spain",
     link: "https://run-eu.eu/2025/03/01/bip-smart-everything-connecting-artificial-intelligence-tools-with-business-ideas/",
+    github: "https://github.com/Tupolaa/BIP-AI-model",
     image: "/images/run-eu-smart-everything.jpeg",
     description:
       "Built an AI tool to process paper and digital invoices: automatic data extraction, calculations, and summaries. Coded front-end and integrated AI models using Python and Hugging Face. Recognised as one of the best presenters at the final showcase.",
@@ -99,6 +101,7 @@ export const timeline: TimelineEntry[] = [
     role: "RUN-EU: Game Changing Games",
     org: "IPCA, Barcelos, Portugal",
     link: "https://run-eu.eu/2024/08/01/sap-game-changing-games-4th-edition/",
+    github: "https://github.com/hongqian-li/The-Mouras-Odyssey",
     certificate: "/images/certificate-run-eu-game.jpeg",
     image: "/images/run-eu-game-changing.jpeg",
     description:

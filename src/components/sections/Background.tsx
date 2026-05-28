@@ -108,6 +108,18 @@ function TimelineList({
                 </button>
               )}
 
+              {/* GitHub link */}
+              {item.github && (
+                <a
+                  href={item.github}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="mt-3 inline-flex items-center gap-1 text-xs text-[#686868] hover:text-[#00C896] transition-colors"
+                >
+                  GitHub ↗
+                </a>
+              )}
+
               {/* Certificate link */}
               {item.certificate && (
                 <a
