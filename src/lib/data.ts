@@ -101,7 +101,6 @@ export const timeline: TimelineEntry[] = [
     role: "RUN-EU: Game Changing Games",
     org: "IPCA, Barcelos, Portugal",
     link: "https://run-eu.eu/2024/08/01/sap-game-changing-games-4th-edition/",
-    github: "https://github.com/hongqian-li/The-Mouras-Odyssey",
     certificate: "/images/certificate-run-eu-game.jpeg",
     image: "/images/run-eu-game-changing.jpeg",
     description:
