@@ -108,6 +108,32 @@ function TimelineList({
                 </button>
               )}
 
+              {/* Multi-image thumbnail strip */}
+              {item.images && item.images.length > 0 && (
+                <div className="mt-4 flex gap-2 overflow-x-auto pb-1">
+                  {item.images.map((src, idx) => (
+                    <button
+                      key={idx}
+                      onClick={() => onLightbox(src)}
+                      className="shrink-0 cursor-zoom-in"
+                      aria-label={`View screen ${idx + 1}`}
+                    >
+                      <img
+                        src={src}
+                        alt=""
+                        style={{
+                          width: 72,
+                          height: 128,
+                          objectFit: "cover",
+                          borderRadius: 4,
+                          display: "block",
+                        }}
+                      />
+                    </button>
+                  ))}
+                </div>
+              )}
+
               {/* GitHub link */}
               {item.github && (
                 <a

@@ -43,6 +43,7 @@ export type TimelineEntry = {
   github?: string;
   certificate?: string;
   image?: string;
+  images?: string[];
 };
 
 export const timeline: TimelineEntry[] = [
@@ -74,7 +75,17 @@ export const timeline: TimelineEntry[] = [
     role: "Project Intern",
     org: "HAMK Häme University of Applied Sciences, Hämeenlinna, Finland",
     description:
-      "Invited to join based on my previous experience at HAMK and local knowledge of Hämeenlinna. The project aimed to increase the number of students staying in Hämeenlinna after graduation. Conducted user research with 30+ student interviews to identify retention challenges. Designed an app prototype (Figma, 8 screens) and presented system architecture and implementation decisions to non-technical stakeholders at Hämeenlinna City Hall.",
+      "Invited to join based on my previous experience at HAMK and local knowledge of Hämeenlinna. The project aimed to increase the number of students staying in Hämeenlinna after graduation. Ran a full design thinking cycle: user research with 30+ student interviews, problem definition, prototype design (Figma, 8 screens), and presented findings and implementation decisions to non-technical stakeholders at Hämeenlinna City Hall.",
+    images: [
+      "/images/hamk-home/hamk-home-figma_pages-to-jpg-0001.jpg",
+      "/images/hamk-home/hamk-home-figma_pages-to-jpg-0002.jpg",
+      "/images/hamk-home/hamk-home-figma_pages-to-jpg-0003.jpg",
+      "/images/hamk-home/hamk-home-figma_pages-to-jpg-0004.jpg",
+      "/images/hamk-home/hamk-home-figma_pages-to-jpg-0005.jpg",
+      "/images/hamk-home/hamk-home-figma_pages-to-jpg-0006.jpg",
+      "/images/hamk-home/hamk-home-figma_pages-to-jpg-0007.jpg",
+      "/images/hamk-home/hamk-home-figma_pages-to-jpg-0008.jpg",
+    ],
   },
   {
     period: "Apr – May 2025",
