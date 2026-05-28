@@ -70,7 +70,7 @@ export default function Thesis() {
           <p className="text-[#D0D0D0] text-sm leading-relaxed">
             While testing HAMK's official website chatbot, I found that a pregnancy-related question
             (GDPR Article 9 sensitive data) was passed directly to the LLM with no detection in place,
-            creating compliance exposure with no legal basis for that processing.
+            and no mechanism to handle it differently from any other query.
             This thesis built a 3-layer privacy system around a RAG pipeline
             (ChromaDB + llama3.2 locally, Azure OpenAI in cloud):
             safe queries are answered from a verified knowledge base;
