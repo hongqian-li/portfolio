@@ -53,7 +53,7 @@ export default function Thesis() {
             >
               Security by Design
               <br />
-              for Enterprise <span className="text-[#00C896]">AI Chatbots</span>
+              for Enterprise AI Chatbots
             </h2>
           </div>
           <div className="flex flex-col justify-end gap-4">

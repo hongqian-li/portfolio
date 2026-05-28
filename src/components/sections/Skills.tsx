@@ -48,7 +48,7 @@ export default function Skills() {
                   ))}
                 </div>
               ) : (
-                <div className="flex flex-wrap gap-2">
+                <div className="flex flex-wrap gap-3">
                   {tier.items.map((item) => (
                     <span
                       key={item}

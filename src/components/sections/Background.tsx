@@ -127,7 +127,7 @@ function TimelineList({
                 </span>
               </div>
 
-              <p className="text-[#D0D0D0] text-sm leading-relaxed mt-3">
+              <p className="text-[#D0D0D0] text-sm leading-loose mt-3">
                 {item.description}
               </p>
 
@@ -184,7 +184,7 @@ function TimelineList({
                   href={item.github}
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="mt-3 inline-flex items-center gap-1 text-xs text-[#686868] hover:text-[#00C896] transition-colors"
+                  className="mt-3 inline-flex items-center gap-1 text-xs text-[#aaaaaa] hover:text-[#00C896] transition-colors"
                 >
                   GitHub ↗
                 </a>
@@ -196,7 +196,7 @@ function TimelineList({
                   href={item.certificate}
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="mt-3 inline-flex items-center gap-1 text-xs text-[#686868] hover:text-[#00C896] transition-colors"
+                  className="mt-3 inline-flex items-center gap-1 text-xs text-[#aaaaaa] hover:text-[#00C896] transition-colors"
                 >
                   View Certificate ↗
                 </a>
