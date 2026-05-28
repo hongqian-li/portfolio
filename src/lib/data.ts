@@ -74,7 +74,7 @@ export const timeline: TimelineEntry[] = [
     role: "Project Intern",
     org: "HAMK Häme University of Applied Sciences, Hämeenlinna, Finland",
     description:
-      "Invited to join based on my previous experience at HAMK and local knowledge of Hämeenlinna. The project aimed to increase the number of students staying in Hämeenlinna after graduation. Conducted user research with 30+ student interviews to identify retention challenges. Designed an app prototype (Figma, 8 screens) and presented system architecture and implementation details to stakeholders at Hämeenlinna City Hall.",
+      "Invited to join based on my previous experience at HAMK and local knowledge of Hämeenlinna. The project aimed to increase the number of students staying in Hämeenlinna after graduation. Conducted user research with 30+ student interviews to identify retention challenges. Designed an app prototype (Figma, 8 screens) and presented system architecture and implementation decisions to non-technical stakeholders at Hämeenlinna City Hall.",
   },
   {
     period: "Apr – May 2025",
