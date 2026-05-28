@@ -53,8 +53,23 @@ export default function Skills() {
           ))}
         </div>
 
-        {/* Currently learning / growing */}
+        {/* Also worked with */}
         <div className="mt-16 pt-8 border-t border-[#1e1e1e] flex flex-col sm:flex-row gap-4 items-start sm:items-center">
+          <span className="text-xs text-[#686868] tracking-widest uppercase shrink-0">
+            Also worked with
+          </span>
+          <div className="w-8 h-px bg-[#2a2a2a] hidden sm:block" />
+          <div className="flex flex-wrap gap-2">
+            {["Nginx", "Apache", "Java", "UiPath", "Robot Framework", "OutSystems", "Google Analytics"].map((item) => (
+              <span key={item} className="text-xs text-[#777777] px-2 py-1 border border-dashed border-[#2a2a2a]">
+                {item}
+              </span>
+            ))}
+          </div>
+        </div>
+
+        {/* Currently exploring */}
+        <div className="mt-6 flex flex-col sm:flex-row gap-4 items-start sm:items-center">
           <span className="text-xs text-[#686868] tracking-widest uppercase shrink-0">
             Also exploring
           </span>

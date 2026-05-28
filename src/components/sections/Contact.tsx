@@ -19,8 +19,9 @@ export default function Contact() {
             <span style={{ WebkitTextStroke: "1px #fafafa", color: "transparent" }}>talk.</span>
           </h2>
           <p className="text-[#D0D0D0] text-base max-w-md leading-relaxed">
-            I'm looking for roles in AI consulting, AI application development,
-            and cloud engineering, based in Finland, open to hybrid or remote across the EU.
+            I'm looking for roles in AI application development and cloud engineering,
+            particularly where privacy-aware AI or Azure infrastructure is part of the brief.
+            Based in Finland, open to hybrid or remote across the EU.
           </p>
         </div>
 

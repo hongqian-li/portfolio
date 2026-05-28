@@ -1,27 +1,27 @@
 export const skills = [
   {
     category: "Cloud & Infrastructure",
-    items: ["Azure", "Terraform", "Docker", "Linux", "Nginx", "Apache", "Kubernetes"],
+    items: ["Azure", "Terraform", "Docker", "Linux", "Kubernetes"],
   },
   {
     category: "AI & Machine Learning",
-    items: ["RAG Pipelines", "ChromaDB", "MCP Servers", "LLM Integration", "Agentic AI", "Prompt Engineering"],
+    items: ["RAG Pipelines", "ChromaDB", "MCP Servers", "LLM Integration", "Agentic AI", "Prompt Engineering", "Hugging Face", "scikit-learn"],
   },
   {
     category: "Languages & Frameworks",
-    items: ["Python", "Flask", "Java", "SQL", "Bash", "HTML/CSS", "REST APIs", "UiPath (RPA)", "Robot Framework"],
+    items: ["Python", "Flask", "SQL", "Bash", "HTML/CSS", "REST APIs", "pandas"],
   },
   {
     category: "DevOps & Tooling",
-    items: ["GitHub Actions", "CI/CD", "Git", "Azure DevOps", "Agile/Scrum", "Jira", "Postman", "Figma"],
+    items: ["GitHub Actions", "CI/CD", "Git", "Azure DevOps", "Agile/Scrum", "Jira", "Confluence", "Postman", "Figma"],
   },
   {
     category: "Data & Analytics",
-    items: ["Power BI", "Excel", "Google Analytics"],
+    items: ["Power BI", "Excel"],
   },
   {
     category: "Compliance & Security",
-    items: ["EU AI Act", "GDPR Article 9", "Privacy by Design", "Zero Trust", "Security by Design", "Risk Classification"],
+    items: ["EU AI Act", "GDPR Article 9", "Privacy by Design", "Security by Design"],
   },
 ];
 
@@ -52,6 +52,7 @@ export const projects = [
       "Three-tier network: App Gateway / App Service / private endpoints",
       "Blob Storage and SQL isolated behind private endpoints, no public data access",
       "Terraform across 5 phases: networking, storage, DB, app, gateway",
+      "€237/month Azure cost estimate (Norway East, Dec 2024) — App Gateway accounts for 78% of spend, the price of eliminating any direct public endpoint",
     ],
   },
 ];

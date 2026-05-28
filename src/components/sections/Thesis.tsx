@@ -121,21 +121,31 @@ export default function Thesis() {
 
         {/* Key finding */}
         <div className="mb-14 px-8 py-6 border-l-2 border-[#00C896]/50 bg-[#0d0d0d]">
-          <p className="text-xs text-[#00C896] tracking-widest uppercase mb-3">Key Finding</p>
-          <p className="text-[#D0D0D0] text-sm leading-relaxed">
+          <p className="text-xs text-[#00C896] tracking-widest uppercase mb-3">Key Findings</p>
+          <p className="text-[#D0D0D0] text-sm leading-relaxed mb-4">
             LLM behaviour on sensitive data is model-dependent and cannot be independently audited.
             gpt-4o-mini passed a pregnancy-related query without flagging it;
             llama3.2 correctly escalated the same query after the keyword list was refined.
             For EU deployments under GDPR, this is a production risk:
             the only part of the system a compliance audit can verify is what the deterministic layer documents.
           </p>
+          <p className="text-[#D0D0D0] text-sm leading-relaxed">
+            The keyword layer does produce false positives, occasionally routing normal queries to human support.
+            That is an acceptable outcome under GDPR: missing a sensitive query is a compliance failure;
+            an unnecessary handoff is not.
+          </p>
         </div>
 
         {/* Test coverage */}
         <div className="border-t border-[#1e1e1e] pt-8">
-          <p className="text-xs text-[#686868] tracking-widest uppercase mb-6">
-            Test Coverage · Local &amp; Azure
-          </p>
+          <div className="flex flex-wrap items-center justify-between gap-4 mb-6">
+            <p className="text-xs text-[#686868] tracking-widest uppercase">
+              Test Coverage · Local &amp; Azure
+            </p>
+            <p className="text-xs text-[#777777] font-mono">
+              4 input categories · local + Azure · 100% final accuracy
+            </p>
+          </div>
           <div className="grid grid-cols-2 sm:grid-cols-4 gap-6">
             {[
               { label: "Type 1", value: "General queries" },
