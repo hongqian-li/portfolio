@@ -5,7 +5,7 @@ export const skillTiers = [
   },
   {
     tier: "Working knowledge",
-    items: ["Kubernetes", "MCP Servers", "LLM Integration", "Hugging Face", "scikit-learn", "pandas", "Prompt Engineering", "Azure DevOps", "Power BI"],
+    items: ["Kubernetes", "MCP Servers", "LLM Integration", "Hugging Face", "Prompt Engineering", "Azure DevOps"],
   },
   {
     tier: "Focus",
@@ -68,7 +68,7 @@ export const timeline: TimelineEntry[] = [
     role: "Exchange Semester – IT Infrastructure & Cloud Computing",
     org: "UAS Technikum Wien, Vienna, Austria",
     description:
-      "Five months in Vienna as an Erasmus student, the most memorable of my degree. Worked alongside students from many different countries across Europe, Asia, and the Americas. Focused on cloud computing and IT infrastructure, with additional courses spanning industrial informatics, Python, and international marketing.",
+      "Five months in Vienna as an Erasmus student. Worked alongside students from many different countries across Europe, Asia, and the Americas. Focused on cloud computing and IT infrastructure, with additional courses spanning industrial informatics, Python, and international marketing.",
   },
   {
     period: "Jun – Aug 2025",

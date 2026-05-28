@@ -85,7 +85,7 @@ export default function Skills() {
           </span>
           <div className="w-8 h-px bg-[#2a2a2a] hidden sm:block" />
           <div className="flex flex-wrap gap-2">
-            {["Copilot Studio", "Power Automate", "LangChain", "N8N"].map((item) => (
+            {["LangChain", "N8N"].map((item) => (
               <span key={item} className="text-xs text-[#777777] px-2 py-1 border border-dashed border-[#2a2a2a]">
                 {item}
               </span>

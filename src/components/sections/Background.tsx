@@ -231,7 +231,7 @@ export default function Background() {
           </div>
           <div className="flex flex-col justify-end">
             <p className="text-[#D0D0D0] text-sm leading-relaxed max-w-sm">
-              My path from broadcast hosting and client-facing roles to software engineering is non-linear. Every step sharpened a skill the next one needed: how to communicate, how to earn trust, and now the technical depth to back it up.
+              My path from broadcast hosting and client-facing roles to software engineering is non-linear. I have led presentations across professional and academic settings: Demola National Finals (Business Finland), Hämeenlinna City Hall, and RUN-EU BIP Smart Everything, where I was recognised as one of the best presenters. The same applies to technical demos and explaining AI systems to non-technical audiences.
             </p>
           </div>
         </div>
