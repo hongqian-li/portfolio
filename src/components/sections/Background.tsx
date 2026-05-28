@@ -120,7 +120,7 @@ function TimelineList({
                       item.role
                     )}
                   </h3>
-                  <p className="text-sm mt-0.5 text-[#00C896]">{item.org}</p>
+                  <p className="text-sm mt-0.5 text-[#888888]">{item.org}</p>
                 </div>
                 <span className="text-xs text-[#686868] font-mono shrink-0 pt-1 whitespace-nowrap">
                   {item.period}

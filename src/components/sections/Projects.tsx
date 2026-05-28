@@ -5,7 +5,7 @@ import { projects } from "@/lib/data";
 
 export default function Projects() {
   return (
-    <section id="projects" className="py-32 px-6 border-t border-[#1e1e1e] bg-[#0a0a0a]">
+    <section id="projects" className="py-32 px-6 border-t border-[#1e1e1e] bg-[#111111]">
       <div className="max-w-6xl mx-auto">
 
         <div className="mb-20">
@@ -22,7 +22,7 @@ export default function Projects() {
           {projects.map((project, i) => (
             <div
               key={i}
-              className="group border-t border-[#1e1e1e] py-12 grid grid-cols-1 lg:grid-cols-[80px_1fr_auto] gap-8 hover:bg-[#0d0d0d] -mx-6 px-6 transition-colors"
+              className="group border-t border-[#1e1e1e] py-12 grid grid-cols-1 lg:grid-cols-[80px_1fr_auto] gap-8 hover:bg-[#161616] -mx-6 px-6 transition-colors"
             >
               {/* Number */}
               <div className="hidden lg:block">
@@ -49,7 +49,7 @@ export default function Projects() {
                     {project.tech.map((t) => (
                       <span
                         key={t}
-                        className="text-xs px-2.5 py-1 bg-[#111111] text-[#D0D0D0] border border-[#1e1e1e] group-hover:border-[#2a2a2a] transition-colors"
+                        className="text-xs px-2.5 py-1 bg-[#0a0a0a] text-[#D0D0D0] border border-[#1e1e1e] group-hover:border-[#2a2a2a] transition-colors"
                       >
                         {t}
                       </span>

@@ -40,7 +40,7 @@ const insights = [
 
 export default function Thesis() {
   return (
-    <section id="thesis" className="py-32 px-6 border-t border-[#1e1e1e] bg-[#111111]">
+    <section id="thesis" className="py-32 px-6 border-t border-[#1e1e1e] bg-[#0a0a0a]">
       <div className="max-w-6xl mx-auto">
 
         {/* Header */}
@@ -71,7 +71,7 @@ export default function Thesis() {
         </div>
 
         {/* System Context + Decision Point */}
-        <div className="mb-14 p-8 border border-[#1e1e1e] bg-[#0d0d0d] relative overflow-hidden">
+        <div className="mb-14 p-8 border border-[#1e1e1e] bg-[#111111] relative overflow-hidden">
           <div className="absolute top-0 left-0 w-1 h-full bg-[#2a2a2a]" />
           <div className="mb-6">
             <p className="text-xs text-[#686868] tracking-widest uppercase mb-3">System Context</p>
@@ -136,7 +136,7 @@ export default function Thesis() {
         </div>
 
         {/* Engineering Insights */}
-        <div className="mb-8 px-8 py-6 border-l-2 border-[#00C896]/50 bg-[#0d0d0d]">
+        <div className="mb-8 px-8 py-6 border-l-2 border-[#00C896]/50 bg-[#111111]">
           <p className="text-xs text-[#00C896] tracking-widest uppercase mb-4">Engineering Insights</p>
           <div className="flex flex-col gap-3">
             {insights.map((insight, i) => (
@@ -146,7 +146,7 @@ export default function Thesis() {
         </div>
 
         {/* Key Outcome */}
-        <div className="mb-14 px-8 py-5 border border-[#1e1e1e] bg-[#0d0d0d]">
+        <div className="mb-14 px-8 py-5 border border-[#1e1e1e] bg-[#111111]">
           <p className="text-xs text-[#686868] tracking-widest uppercase mb-2">Key Outcome</p>
           <p className="text-[#D0D0D0] text-sm leading-relaxed">
             The system prioritises auditability and regulatory compliance over model autonomy,

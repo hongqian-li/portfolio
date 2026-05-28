@@ -31,31 +31,40 @@ export default function Skills() {
           {skillTiers.map((tier) => (
             <div
               key={tier.tier}
-              className="py-8 grid grid-cols-1 sm:grid-cols-[160px_1fr] gap-4 sm:gap-8 items-start"
+              className={`grid grid-cols-1 sm:grid-cols-[160px_1fr] gap-4 sm:gap-8 items-start ${tier.tier === "Focus" ? "pt-8 pb-4" : "py-8"}`}
             >
               <span className="text-xs text-[#686868] font-mono tracking-widest uppercase shrink-0 sm:pt-1">
                 {tier.tier}
               </span>
-              <div className="flex flex-wrap gap-2">
-                {tier.items.map((item) => (
-                  <span
-                    key={item}
-                    className={`px-3 py-1.5 text-xs border transition-all duration-200 cursor-default ${
-                      tier.tier === "Focus"
-                        ? "text-[#00C896]/70 border-[#00C896]/20 hover:border-[#00C896]/40 hover:text-[#00C896]"
-                        : "text-[#D0D0D0] border-[#1e1e1e] hover:border-[#00C896]/50 hover:text-[#fafafa]"
-                    }`}
-                  >
-                    {item}
-                  </span>
-                ))}
-              </div>
+              {tier.tier === "Focus" ? (
+                <div className="grid grid-cols-2 gap-3">
+                  {tier.items.map((item) => (
+                    <span
+                      key={item}
+                      className="px-4 py-3 text-sm text-[#00C896]/70 border border-[#00C896]/20 hover:border-[#00C896]/40 hover:text-[#00C896] transition-all duration-200 cursor-default"
+                    >
+                      {item}
+                    </span>
+                  ))}
+                </div>
+              ) : (
+                <div className="flex flex-wrap gap-2">
+                  {tier.items.map((item) => (
+                    <span
+                      key={item}
+                      className="px-3 py-1.5 text-xs text-[#D0D0D0] border border-[#1e1e1e] hover:border-[#00C896]/50 hover:text-[#fafafa] transition-all duration-200 cursor-default"
+                    >
+                      {item}
+                    </span>
+                  ))}
+                </div>
+              )}
             </div>
           ))}
         </div>
 
         {/* Also worked with */}
-        <div className="mt-12 pt-8 border-t border-[#1e1e1e] flex flex-col sm:flex-row gap-4 items-start sm:items-center">
+        <div className="mt-2 pt-6 border-t border-[#1e1e1e] flex flex-col sm:flex-row gap-4 items-start sm:items-center">
           <span className="text-xs text-[#686868] tracking-widest uppercase shrink-0">
             Also worked with
           </span>
