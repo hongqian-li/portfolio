@@ -161,7 +161,7 @@ export default function Thesis() {
               Test Coverage · Local &amp; Azure
             </p>
             <p className="text-xs text-[#777777] font-mono">
-              4 input categories · local + Azure · 100% final accuracy
+              4 input categories · verified across local and Azure · correct classification on all test inputs
             </p>
           </div>
           <div className="grid grid-cols-2 sm:grid-cols-4 gap-6">

@@ -19,7 +19,7 @@ export const projects = [
     title: "Privacy-Conscious AI Support System",
     tech: ["Python", "Flask", "ChromaDB", "Ollama", "MCP Server", "RAG"],
     github: "https://github.com/hongqian-li/accommodation-chatbot",
-    context: "Built with Claude Code, derived from the thesis architecture, for the student housing queries I handled at HAMK's service desk.",
+    context: "Derived from the thesis architecture, for the student housing queries I handled at HAMK's service desk.",
     system: "RAG pipeline over a verified knowledge base with a custom MCP server exposing four live tools (VR train schedules, weather, housing listings, web search). Deterministic classifier routes sensitive queries to human support before any LLM processing. Fail-safe design: uncertain inputs route to human support, not to the model.",
     engineeringHighlight: "LLM-first routing was abandoned due to inconsistent behaviour across models, which led to adopting deterministic-first classification for auditability and GDPR compliance.",
   },
@@ -30,7 +30,7 @@ export const projects = [
     github: "https://github.com/hongqian-li/cloud-computing-technikum-wien/tree/main/azure-cloud-file-sharing-app",
     context: "Erasmus cloud computing capstone at UAS Technikum Wien (2025/26): secure file sharing deployed on Azure with no manual portal configuration.",
     system: "Three-tier private network: Application Gateway as the only public entry point, App Service on a delegated subnet, Blob Storage and SQL behind private endpoints. Application Insights for monitoring; secrets injected via Terraform environment variables, no hardcoded credentials.",
-    engineeringHighlight: "Entire infrastructure across five phases provisioned through Terraform, with an estimated monthly cost of €237 (Norway East, Dec 2024). App Gateway accounts for 78% of spend.",
+    engineeringHighlight: "Entire infrastructure across five phases provisioned through Terraform, with an estimated monthly cost of €237 (Norway East, Dec 2025). App Gateway accounts for 78% of spend.",
   },
 ];
 
@@ -135,7 +135,7 @@ export const timeline: TimelineEntry[] = [
   {
     period: "Oct 2020 – Aug 2023",
     role: "Student Development Coach",
-    org: "Easyke (易课教育), Chengdu, Sichuan, China",
+    org: "Easyke (易课教育) · Beijing Fanyou Education Technology, Chengdu, Sichuan, China",
     description:
       "Guided 100+ Chinese students pursuing education abroad (Australia, Canada, UK) with study plans and course selection. Weekly check-ins with students and parents. Handled daily administrative issues, subscription renewals, and customer follow-ups.",
   },
