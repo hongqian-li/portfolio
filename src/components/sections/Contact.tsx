@@ -94,7 +94,7 @@ export default function Contact() {
             Hongqian Li · Tampere, Finland · 2026
           </p>
           <p className="text-xs text-[#2a2a2a]">
-            Built with Next.js · Claude Code · Deployed on Vercel
+            Built with Next.js · Deployed on Vercel
           </p>
         </div>
 
