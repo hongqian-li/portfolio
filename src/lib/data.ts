@@ -120,7 +120,7 @@ export const timeline: TimelineEntry[] = [
   },
   {
     period: "May – Aug 2024",
-    role: "Customer Service Specialist",
+    role: "Summer Employee / Customer Service",
     org: "HAMK Häme University of Applied Sciences, Hämeenlinna, Finland",
     description:
       "First summer job in Finland. Handled 30+ daily student inquiries about housing, arrival, and orientation. Tracked 900+ requests in Excel. Coordinated arrival logistics for 100+ international students. Received positive recognition from the HAMK kiinteistöpalvelut team.",
@@ -135,7 +135,7 @@ export const timeline: TimelineEntry[] = [
   {
     period: "Oct 2020 – Aug 2023",
     role: "Student Development Coach",
-    org: "Easyke (易课教育) · Beijing Fanyou Education Technology, Chengdu, Sichuan, China",
+    org: "Easyke · Beijing Fanyou Education Technology, Chengdu, Sichuan, China",
     description:
       "Guided 100+ Chinese students pursuing education abroad (Australia, Canada, UK) with study plans and course selection. Weekly check-ins with students and parents. Handled daily administrative issues, subscription renewals, and customer follow-ups.",
   },
