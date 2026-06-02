@@ -67,6 +67,14 @@ export default function Thesis() {
                 </span>
               ))}
             </div>
+            <a
+              href="https://urn.fi/URN:NBN:fi:amk-2026052919112"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="text-xs text-[#00C896] hover:text-[#fafafa] transition-colors w-fit"
+            >
+              Read full thesis →
+            </a>
           </div>
         </div>
 
