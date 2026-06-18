@@ -14,12 +14,12 @@ export default function Contact() {
             className="font-heading font-extrabold text-[#fafafa] leading-none mb-6"
             style={{ fontSize: "clamp(3rem, 8vw, 7rem)" }}
           >
-            Let's
+            Let&apos;s
             <br />
             <span style={{ WebkitTextStroke: "1px #fafafa", color: "transparent" }}>talk.</span>
           </h2>
           <p className="text-[#D0D0D0] text-base max-w-md leading-relaxed">
-            I'm looking for roles in AI application development and cloud engineering,
+            I&apos;m looking for roles in AI application development and cloud engineering,
             particularly where privacy-aware AI or Azure infrastructure is part of the brief.
             Based in Finland, open to hybrid or remote across the EU.
           </p>
