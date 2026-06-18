@@ -40,7 +40,15 @@ export default function Projects() {
                   <h3 className="font-heading font-bold text-xl text-[#fafafa] group-hover:text-[#00C896] transition-colors">
                     {project.title}
                   </h3>
+                  {project.status && (
+                    <span className="text-[10px] tracking-widest uppercase px-2 py-1 border border-[#2a2a2a] text-[#999999] whitespace-nowrap">
+                      In Progress
+                    </span>
+                  )}
                 </div>
+                {project.status && (
+                  <p className="text-xs text-[#686868] mb-4 -mt-2">{project.status}</p>
+                )}
 
                 {/* Tech Stack */}
                 <div className="mb-6">

@@ -13,7 +13,18 @@ export const skillTiers = [
   },
 ];
 
-export const projects = [
+type Project = {
+  number: string;
+  title: string;
+  tech: string[];
+  github: string;
+  context: string;
+  system: string;
+  engineeringHighlight: string;
+  status?: string;
+};
+
+export const projects: Project[] = [
   {
     number: "01",
     title: "Privacy-Conscious AI Support System",
@@ -31,6 +42,16 @@ export const projects = [
     context: "Erasmus cloud computing capstone at UAS Technikum Wien (2025/26): secure file sharing deployed on Azure with no manual portal configuration.",
     system: "Three-tier private network: Application Gateway as the only public entry point, App Service on a delegated subnet, Blob Storage and SQL behind private endpoints. Application Insights for monitoring; secrets injected via Terraform environment variables, no hardcoded credentials.",
     engineeringHighlight: "Entire infrastructure across five phases provisioned through Terraform, with an estimated monthly cost of €237 (Norway East, Dec 2025). App Gateway accounts for 78% of spend.",
+  },
+  {
+    number: "03",
+    title: "Finnish Job Market Screening Assistant",
+    tech: ["Python", "Ollama (Llama 3.2)", "ChromaDB", "RAG", "Tool Calling"],
+    github: "https://github.com/hongqian-li/fin-job-helper",
+    status: "V1 shipped. V2 (rule-based Finnish detection) and V3 (ChromaDB RAG) in progress.",
+    context: "Built during my own job search for AI and cloud roles in Finland. A role often looks like a strong match on the surface, until a dealbreaker turns up buried in the JD: \"native Finnish speaker required,\" or \"3+ years' experience\" tucked into a later paragraph. After a dozen-plus applications, the real time sink wasn't writing cover letters or even reading JDs. It was reading them in full before finding the dealbreaker. fin-job-helper runs that first-pass screen automatically, so careful reading only goes into roles that already cleared it.",
+    system: "RAG pipeline compares a job description against a structured profile of my background and outputs a structured verdict: Finnish required yes/no, match score, specific gaps, and a recommendation. A hybrid rule-and-LLM layer handles the language-requirement check specifically. Every real job description from my own search becomes a test case driving the next version.",
+    engineeringHighlight: "V1 testing showed the LLM alone self-contradicted on language detection. It marked \"Finnish required: No\" in one line, then stated the candidate didn't meet the language requirement in the next. V2 adds a deterministic keyword layer (matching phrases like \"native Finnish,\" \"sujuva suomi\") first, falling back to the model only for ambiguous cases.",
   },
 ];
 
