@@ -49,6 +49,14 @@ export type TimelineEntry = {
 
 export const timeline: TimelineEntry[] = [
   {
+    period: "Jun 2026",
+    role: "Graduated — BBA, Computer Applications (DevOps / Delivering Software Products)",
+    org: "HAMK Häme University of Applied Sciences, Hämeenlinna, Finland",
+    image: "/images/Degree_Certificate.jpg",
+    description:
+      "Completed a 3.5-year degree ahead of schedule, with a focus on software engineering, cloud infrastructure, and AI systems. GPA 4.98/5 · 227 ECTS credits · Thesis graded 5/5.",
+  },
+  {
     period: "Apr – May 2026",
     role: "RUN-EU: Future Explorations",
     org: "FHV, Vorarlberg, Austria",
